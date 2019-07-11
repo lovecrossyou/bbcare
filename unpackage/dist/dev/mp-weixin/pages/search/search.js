@@ -212,27 +212,27 @@ __webpack_require__.r(__webpack_exports__);
         itemArray: [{
           type: 'image', //image类型
           css: 'left:0;top:0;bottom:0;width:100%',
-          value: '../../static/search/angel_banner@2x.png' //该项的value， 图片类型为图片路径
+          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
         }] },
       {
         itemArray: [{
           type: 'image',
           css: 'left:0;top:0;bottom:5%;width:100%',
-          value: '../../static/search/angel_banner@2x.png' //该项的value， 图片类型为图片路径
+          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
         }] },
       {
         bgColor: '#FFFFFF',
         itemArray: [{
           type: 'image',
           css: 'left:0;top:0;bottom:0;width:100%',
-          value: '../../static/search/angel_banner@2x.png' //该项的value， 图片类型为图片路径
+          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
         }] }],
 
       swiperItems_2: [{ //元素级 该数据有多少长度则swiper-item有多少项（就是有几页）
         itemArray: [{
           type: 'image', //image类型
           css: 'left:0;top:0;bottom:0;width:60%',
-          value: '../../static/search/angel_banner@2x.png' //该项的value， 图片类型为图片路径
+          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
         }] },
       {
         itemArray: [{
@@ -245,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
         itemArray: [{
           type: 'image',
           css: 'left:0;top:0;bottom:0;width:60%',
-          value: '../../static/search/angel_banner@2x.png' //该项的value， 图片类型为图片路径
+          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
         }] }] };
 
 

@@ -35,7 +35,9 @@
         }
         ,{
             "path" : "pages/care/care",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText":"守护宝辈"
+			}
         }
         ,{
             "path" : "pages/angle-info/angle-info",
@@ -44,6 +46,36 @@
 			}
         }
     ],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#4784FF",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tab/tab_home.png",
+				"selectedIconPath": "static/tab/tab_home_s.png"
+			},
+			{
+				"pagePath": "pages/care/care",
+				"text": "守护宝贝",
+				"iconPath": "static/tab/tab_dynamic.png",
+				"selectedIconPath": "static/tab/tab_dynamic_s.png"
+			},
+			{
+				"pagePath": "pages/search/search",
+				"text": "寻找天使",
+				"iconPath": "static/tab/tab_connections.png",
+				"selectedIconPath": "static/tab/tab_connections_s.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "static/tab/tab_connections.png",
+				"selectedIconPath": "static/tab/tab_connections_s.png"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

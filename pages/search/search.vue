@@ -2,7 +2,7 @@
 	<view class="main">
 		<view class="title-wrapper">
 			<naviTitle title="寻找天使">
-				<image src="../../static/search/angle_sousuo.png" class="search"></image>
+				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="search"></image>
 			</naviTitle>
 		</view>
 		<QSwiper :swiperItems="swiperItems_3" :durations="1000" indicator_dots indicator_color="rgba(0, 0, 0, .3)"
@@ -12,7 +12,7 @@
 
 		<view class="title-wrapper">
 			<naviTitle title="救助天使 ">
-				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
+				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="arrow-right"></image>
 				<view slot="desc">
 					<view class="title-desc">
 						家庭私人医生，如有意外，随叫随到
@@ -23,9 +23,9 @@
 
 		<view class="angle-list">
 			<QSwiper circular :swiperItems="swiperItems_2" :durations="1000" indicator_dots indicator_color="rgba(0, 0, 0, .3)"
-		 indicator_active_color="#000000" :interval="1000" @click="swiperClick($event)" indicator_custom
-		 :indicator_custom_set="indicator_custom_set_3" :height="height_2">
-		</QSwiper>
+			 indicator_active_color="#000000" :interval="1000" @click="swiperClick($event)" indicator_custom
+			 :indicator_custom_set="indicator_custom_set_3" :height="height_2">
+			</QSwiper>
 			<!-- <view class="angle-item">
 				<image class="angle-avatar" src="../../static/search/angle_renwu_1@2x.png" mode=""></image>
 				<view class="item-desc">
@@ -39,10 +39,10 @@
 				</view>
 			</view> -->
 		</view>
-		
+
 		<view class="title-wrapper">
 			<naviTitle title="维修天使 ">
-				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
+				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="arrow-right"></image>
 				<view slot="desc">
 					<view class="title-desc">
 						锅碗瓢盆样样能修
@@ -54,7 +54,7 @@
 			<view class="angle-item">
 				<image class="angle-avatar" src="../../static/search/angle_renwu_1@2x.png" mode=""></image>
 				<view class="item-desc">
-					电器小能手 
+					电器小能手
 				</view>
 				<view class="angle-item-star-wrapper">
 					<uni-rate disabled="true" value="4"></uni-rate>
@@ -64,10 +64,10 @@
 				</view>
 			</view>
 		</view>
-		
+
 		<view class="title-wrapper">
 			<naviTitle title="设备天使 ">
-				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
+				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="arrow-right"></image>
 				<view slot="desc">
 					<view class="title-desc">
 						锅碗瓢盆样样能修
@@ -77,9 +77,9 @@
 		</view>
 		<view class="angle-list">
 			<view class="angle-item">
-				<image class="angle-avatar" src="../../static/search/angle_renwu_1@2x.png" mode=""></image>
+				<image class="angle-avatar" src="http://qnimage.xiteng.com/angel_banner@2x.png" mode=""></image>
 				<view class="item-desc">
-					上门维修速度快  
+					上门维修速度快
 				</view>
 				<view class="angle-item-star-wrapper">
 					<uni-rate disabled="true" value="4"></uni-rate>
@@ -106,33 +106,33 @@
 					indicator_unselect_dots: 'width:10px;background-color:rgba(0,0,0,.3);',
 					indicator_select_dots: 'width:20px;background-color:rgba(0,0,0,.7);'
 				},
-				height_2:'120upx',
+				height_2: '120upx',
 				height_3: '223upx',
 				swiperItems_3: [{ //元素级 该数据有多少长度则swiper-item有多少项（就是有几页）
 					itemArray: [{
 						type: 'image', //image类型
 						css: 'left:0;top:0;bottom:0;width:100%',
-						value: '../../static/search/angel_banner@2x.png', //该项的value， 图片类型为图片路径
+						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
 					}]
 				}, {
 					itemArray: [{
 						type: 'image',
 						css: 'left:0;top:0;bottom:5%;width:100%',
-						value: '../../static/search/angel_banner@2x.png', //该项的value， 图片类型为图片路径
+						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
 					}]
 				}, {
 					bgColor: '#FFFFFF',
 					itemArray: [{
 						type: 'image',
 						css: 'left:0;top:0;bottom:0;width:100%',
-						value: '../../static/search/angel_banner@2x.png', //该项的value， 图片类型为图片路径
+						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
 					}]
 				}],
 				swiperItems_2: [{ //元素级 该数据有多少长度则swiper-item有多少项（就是有几页）
 					itemArray: [{
 						type: 'image', //image类型
 						css: 'left:0;top:0;bottom:0;width:60%',
-						value: '../../static/search/angel_banner@2x.png', //该项的value， 图片类型为图片路径
+						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
 					}]
 				}, {
 					itemArray: [{
@@ -145,7 +145,7 @@
 					itemArray: [{
 						type: 'image',
 						css: 'left:0;top:0;bottom:0;width:60%',
-						value: '../../static/search/angel_banner@2x.png', //该项的value， 图片类型为图片路径
+						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
 					}]
 				}],
 			}
