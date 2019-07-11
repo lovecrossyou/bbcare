@@ -112,6 +112,66 @@
 					
 				</view>
 			</view>
+			
+			<view class="baobei-item">
+				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+				<view class="baobei-info">
+					<view class="baobei-user">
+						<view class="baobei-name">
+							帅老爸
+						</view>
+						<view class="baobei-desc">
+							最近血压有点高，要吃药
+						</view>
+					</view>
+					<view class="addr-wrapper">
+						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+						<view class="addr">北京市西城区百万庄大街11号</view>
+					</view>
+					
+				</view>
+			</view>
+			
+			<view class="baobei-item">
+				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+				<view class="baobei-info">
+					<view class="baobei-user">
+						<view class="baobei-name">
+							帅老爸
+						</view>
+						<view class="baobei-desc">
+							最近血压有点高，要吃药
+						</view>
+					</view>
+					<view class="addr-wrapper">
+						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+						<view class="addr">北京市西城区百万庄大街11号</view>
+					</view>
+					
+				</view>
+			</view>
+			
+			<view class="baobei-item">
+				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+				<view class="baobei-info">
+					<view class="baobei-user">
+						<view class="baobei-name">
+							帅老爸
+						</view>
+						<view class="baobei-desc">
+							最近血压有点高，要吃药
+						</view>
+					</view>
+					<view class="addr-wrapper">
+						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+						<view class="addr">北京市西城区百万庄大街11号</view>
+					</view>
+					
+				</view>
+			</view>
 		</view>
 		</view>
 	</view>

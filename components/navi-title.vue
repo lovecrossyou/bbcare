@@ -1,9 +1,18 @@
 <template>
-	<view class="navi-wrapper">
-		<view class="title">
-			{{title}}
+	<view class="main">
+		<view class="navi-wrapper">
+			<view class="title">
+				{{title}}
+			</view>
+			<slot></slot>
 		</view>
-		<slot></slot>
+		<view>
+			<slot name="desc">
+				<view class="desc">
+					
+				</view>
+			</slot>
+		</view>
 	</view>
 </template>
 
@@ -14,9 +23,21 @@
 </script>
 
 <style>
+	.main{
+		/* display: flex;
+		flex-direction: column;
+		height: 80upx;
+		background: #F6931D; */
+	}
 	.title {
 		font-size: 36upx;
 		color: #242A38;
+		font-weight: bold;
+	}
+	
+	.desc{
+		font-size: 28upx;
+		color: #999999;
 	}
 
 	.navi-wrapper {

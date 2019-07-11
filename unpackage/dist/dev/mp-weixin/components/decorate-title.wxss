@@ -1,0 +1,18 @@
+
+.content{
+	position: relative;
+	height: 35rpx;
+}
+.title {
+	color: #242A38;
+	font-size: 32rpx;
+}
+.base-line{
+	position: absolute;
+	bottom: 0rpx;
+	height: 14rpx;
+	background: #FADBA4;
+	width: 124rpx;
+	z-index: -10;
+}
+

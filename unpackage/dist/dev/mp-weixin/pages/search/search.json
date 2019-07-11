@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "navi-title": "/components/navi-title",
+    "q-swiper": "/components/QS-Swiper",
+    "uni-rate": "/components/uni-rate/uni-rate"
+  }
+}
