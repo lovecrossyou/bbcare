@@ -61,7 +61,7 @@
 		</view>
 
 
-		<view class="footer">
+		<!-- <view class="footer">
 			<view class="footer_item" @click="goCare">
 				<image src="/static/tab/home.png" class="footer_item_icon">
 				</image>
@@ -83,7 +83,7 @@
 					我
 				</view>
 			</view>
-		</view>
+		</view> -->
 	</view>
 </template>
 

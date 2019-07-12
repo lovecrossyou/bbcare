@@ -1060,67 +1060,26 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'position_relative width100 data-v-76ac8c13'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[[6],[[7],[3,'classObj']],[3,'transition']],[1,'background-color:']],[[6],[[6],[[7],[3,'swiperItems']],[[7],[3,'current']]],[3,'bgColor']]],[1,';']])
-Z([[7],[3,'autoplay']])
-Z([3,'__e'])
-Z(z[3])
-Z([[7],[3,'circular']])
-Z([3,'swiperStyle data-v-76ac8c13'])
-Z([[4],[[5],[[5],[[4],[[5],[[5],[1,'change']],[[4],[[5],[[4],[[5],[[5],[1,'swiperChange']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'animationfinish']],[[4],[[5],[[4],[[5],[[5],[1,'animationfinish']],[[4],[[5],[1,'$event']]]]]]]]]]])
-Z([[7],[3,'display_multiple_items']])
-Z([[7],[3,'time']])
-Z([[7],[3,'indicator_active_color']])
-Z([[7],[3,'indicator_color']])
-Z([[2,'?:'],[[7],[3,'indicator_custom']],[1,false],[[7],[3,'indicator_dots']]])
-Z([[7],[3,'interval']])
-Z([[7],[3,'next_margin']])
-Z([[7],[3,'previous_margin']])
-Z([[7],[3,'skip_hidden_item_layout']])
-Z([[2,'+'],[[2,'+'],[1,'height:'],[[2,'||'],[[7],[3,'swiperHeight']],[[7],[3,'height']]]],[1,';']])
-Z([[7],[3,'vertical']])
-Z([3,'indexs'])
-Z([3,'items'])
-Z([[7],[3,'swiperItems']])
-Z(z[19])
-Z(z[3])
-Z([3,'position_relative data-v-76ac8c13'])
-Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'click']],[[4],[[5],[[7],[3,'indexs']]]]]]]]]]]])
-Z([3,'index'])
-Z([3,'item'])
-Z([[6],[[7],[3,'items']],[3,'itemArray']])
-Z(z[26])
-Z([3,'data-v-76ac8c13'])
-Z([[2,'&&'],[[7],[3,'item']],[[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'image']]])
-Z([[2,'&&'],[[7],[3,'item']],[[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'text']]])
-Z([[2,'&&'],[[7],[3,'item']],[[2,'=='],[[6],[[7],[3,'item']],[3,'type']],[1,'button']]])
-Z([[7],[3,'indicator_custom']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_2)return __WXML_GLOBAL__.ops_cached.$gwx_2
 __WXML_GLOBAL__.ops_cached.$gwx_2=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'main'])
+Z([[6],[[7],[3,'$slots']],[3,'desc']])
+Z([3,'desc'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
 }
 function gz$gwx_3(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
 __WXML_GLOBAL__.ops_cached.$gwx_3=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'main'])
-Z([[6],[[7],[3,'$slots']],[3,'desc']])
-Z([3,'desc'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
 }
 function gz$gwx_4(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
 __WXML_GLOBAL__.ops_cached.$gwx_4=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
-}
-function gz$gwx_5(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
-__WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'index'])
 Z([3,'star'])
@@ -1140,11 +1099,11 @@ Z([[7],[3,'activeColor']])
 Z(z[10])
 Z([3,'star-filled'])
 Z([[2,'+'],[1,'2-'],[[7],[3,'index']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
+})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
-function gz$gwx_6(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
-__WXML_GLOBAL__.ops_cached.$gwx_6=[];
+function gz$gwx_5(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
+__WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'main'])
 Z([3,'__l'])
@@ -1157,17 +1116,17 @@ Z([3,'2'])
 Z(z[1])
 Z([3,'历史评价'])
 Z([3,'3'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
+}
+function gz$gwx_6(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
+__WXML_GLOBAL__.ops_cached.$gwx_6=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
 })(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
 }
 function gz$gwx_7(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
 __WXML_GLOBAL__.ops_cached.$gwx_7=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
-}
-function gz$gwx_8(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
-__WXML_GLOBAL__.ops_cached.$gwx_8=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__e'])
 Z([3,'expert-prifle'])
@@ -1176,12 +1135,23 @@ Z([3,'__l'])
 Z([3,'true'])
 Z([3,'4'])
 Z([3,'1'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
+}
+function gz$gwx_8(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
+__WXML_GLOBAL__.ops_cached.$gwx_8=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
 __WXML_GLOBAL__.ops_cached.$gwx_9=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'__l'])
+Z([3,'true'])
+Z([3,'14'])
+Z([3,'4'])
+Z([3,'1'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
 }
 function gz$gwx_10(){
@@ -1194,216 +1164,220 @@ Z([3,'寻找天使'])
 Z([3,'1'])
 Z([[4],[[5],[1,'default']]])
 Z(z[1])
-Z([3,'__e'])
-Z([[4],[[5],[[4],[[5],[[5],[1,'^click']],[[4],[[5],[[4],[[5],[[5],[1,'swiperClick']],[[4],[[5],[1,'$event']]]]]]]]]]])
-Z([1,1000])
-Z([[7],[3,'height_3']])
-Z([3,'#000000'])
-Z([3,'rgba(0, 0, 0, .3)'])
-Z([[7],[3,'indicator_custom_set_3']])
-Z(z[8])
-Z([[7],[3,'swiperItems_3']])
-Z([3,'2'])
-Z(z[1])
 Z([3,'救助天使 '])
-Z([3,'3'])
+Z([3,'2'])
 Z([[4],[[5],[[5],[1,'default']],[1,'desc']]])
+Z([3,'companys'])
 Z(z[1])
-Z(z[6])
-Z(z[7])
-Z(z[8])
-Z([[7],[3,'height_2']])
-Z(z[10])
-Z(z[11])
-Z(z[12])
-Z(z[8])
-Z([[7],[3,'swiperItems_2']])
+Z([3,'3'])
+Z(z[1])
 Z([3,'4'])
 Z(z[1])
-Z([3,'维修天使 '])
 Z([3,'5'])
-Z(z[19])
 Z(z[1])
-Z([3,'true'])
-Z(z[30])
 Z([3,'6'])
 Z(z[1])
-Z([3,'设备天使 '])
 Z([3,'7'])
-Z(z[19])
 Z(z[1])
-Z(z[36])
-Z(z[30])
 Z([3,'8'])
+Z(z[1])
+Z([3,'维修天使 '])
+Z([3,'9'])
+Z(z[8])
+Z(z[9])
+Z(z[1])
+Z([3,'10'])
+Z(z[1])
+Z([3,'11'])
+Z(z[1])
+Z([3,'12'])
+Z(z[1])
+Z([3,'13'])
+Z(z[1])
+Z([3,'14'])
+Z(z[1])
+Z([3,'15'])
+Z(z[1])
+Z([3,'设备天使 '])
+Z([3,'16'])
+Z(z[8])
+Z(z[9])
+Z(z[1])
+Z([3,'17'])
+Z(z[1])
+Z([3,'18'])
+Z(z[1])
+Z([3,'19'])
+Z(z[1])
+Z([3,'20'])
+Z(z[1])
+Z([3,'21'])
+Z(z[1])
+Z([3,'22'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./components/QS-Swiper.wxml','./components/decorate-title.wxml','./components/navi-title.wxml','./components/uni-icon/uni-icon.wxml','./components/uni-rate/uni-rate.wxml','./pages/angle-info/angle-info.wxml','./pages/care/care.wxml','./pages/index/index.wxml','./pages/me/me.wxml','./pages/search/search.wxml'];d_[x[0]]={}
+var x=['./components/decorate-title.wxml','./components/navi-title.wxml','./components/uni-icon/uni-icon.wxml','./components/uni-rate/uni-rate.wxml','./pages/angle-info/angle-info.wxml','./pages/care/care.wxml','./pages/index/index.wxml','./pages/me/me.wxml','./pages/search/components/angle-item.wxml','./pages/search/search.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
-var oB=_mz(z,'view',['class',0,'style',1],[],e,s,gg)
-var oD=_mz(z,'swiper',['autoplay',2,'bindanimationfinish',1,'bindchange',2,'circular',3,'class',4,'data-event-opts',5,'displayMultipleItems',6,'duration',7,'indicatorActiveColor',8,'indicatorColor',9,'indicatorDots',10,'interval',11,'nextMargin',12,'previousMargin',13,'skipHiddenItemLayout',14,'style',15,'vertical',16],[],e,s,gg)
-var fE=_v()
-_(oD,fE)
-var cF=function(oH,hG,cI,gg){
-var lK=_mz(z,'swiper-item',['bindtap',23,'class',1,'data-event-opts',2],[],oH,hG,gg)
-var aL=_v()
-_(lK,aL)
-var tM=function(bO,eN,oP,gg){
-var oR=_v()
-_(oP,oR)
-if(_oz(z,31,bO,eN,gg)){oR.wxVkey=1
-}
-else{oR.wxVkey=2
-var fS=_v()
-_(oR,fS)
-if(_oz(z,32,bO,eN,gg)){fS.wxVkey=1
-}
-else{fS.wxVkey=2
-var cT=_v()
-_(fS,cT)
-if(_oz(z,33,bO,eN,gg)){cT.wxVkey=1
-}
-cT.wxXCkey=1
-}
-fS.wxXCkey=1
-}
-oR.wxXCkey=1
-return oP
-}
-aL.wxXCkey=2
-_2z(z,28,tM,oH,hG,gg,aL,'item','index','index')
-_(cI,lK)
-return cI
-}
-fE.wxXCkey=2
-_2z(z,21,cF,e,s,gg,fE,'items','indexs','indexs')
-_(oB,oD)
-var xC=_v()
-_(oB,xC)
-if(_oz(z,34,e,s,gg)){xC.wxVkey=1
-}
-xC.wxXCkey=1
-_(r,oB)
 return r
 }
 e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
 d_[x[1]]={}
 var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
+var xC=_n('view')
+_rz(z,xC,'class',0,e,s,gg)
+var oD=_n('slot')
+_(xC,oD)
+var fE=_n('view')
+var cF=_v()
+_(fE,cF)
+if(_oz(z,1,e,s,gg)){cF.wxVkey=1
+var hG=_n('slot')
+_rz(z,hG,'name',2,e,s,gg)
+_(cF,hG)
+}
+else{cF.wxVkey=2
+}
+cF.wxXCkey=1
+_(xC,fE)
+_(r,xC)
 return r
 }
 e_[x[1]]={f:m1,j:[],i:[],ti:[],ic:[]}
 d_[x[2]]={}
 var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
-var cW=_n('view')
-_rz(z,cW,'class',0,e,s,gg)
-var oX=_n('slot')
-_(cW,oX)
-var lY=_n('view')
-var aZ=_v()
-_(lY,aZ)
-if(_oz(z,1,e,s,gg)){aZ.wxVkey=1
-var t1=_n('slot')
-_rz(z,t1,'name',2,e,s,gg)
-_(aZ,t1)
-}
-else{aZ.wxVkey=2
-}
-aZ.wxXCkey=1
-_(cW,lY)
-_(r,cW)
 return r
 }
 e_[x[2]]={f:m2,j:[],i:[],ti:[],ic:[]}
 d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
+var oJ=_v()
+_(r,oJ)
+var lK=function(tM,aL,eN,gg){
+var oP=_mz(z,'view',['bindtap',4,'class',1,'data-event-opts',2,'style',3],[],tM,aL,gg)
+var xQ=_mz(z,'uni-icon',['bind:__l',8,'color',1,'size',2,'type',3,'vueId',4],[],tM,aL,gg)
+_(oP,xQ)
+var oR=_mz(z,'uni-icon',['bind:__l',13,'color',1,'size',2,'type',3,'vueId',4],[],tM,aL,gg)
+_(oP,oR)
+_(eN,oP)
+return eN
+}
+oJ.wxXCkey=4
+_2z(z,2,lK,e,s,gg,oJ,'star','index','index')
 return r
 }
 e_[x[3]]={f:m3,j:[],i:[],ti:[],ic:[]}
 d_[x[4]]={}
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var o4=_v()
-_(r,o4)
-var x5=function(f7,o6,c8,gg){
-var o0=_mz(z,'view',['bindtap',4,'class',1,'data-event-opts',2,'style',3],[],f7,o6,gg)
-var cAB=_mz(z,'uni-icon',['bind:__l',8,'color',1,'size',2,'type',3,'vueId',4],[],f7,o6,gg)
-_(o0,cAB)
-var oBB=_mz(z,'uni-icon',['bind:__l',13,'color',1,'size',2,'type',3,'vueId',4],[],f7,o6,gg)
-_(o0,oBB)
-_(c8,o0)
-return c8
-}
-o4.wxXCkey=4
-_2z(z,2,x5,e,s,gg,o4,'star','index','index')
+var cT=_n('view')
+_rz(z,cT,'class',0,e,s,gg)
+var hU=_mz(z,'uni-rate',['bind:__l',1,'disabled',1,'value',2,'vueId',3],[],e,s,gg)
+_(cT,hU)
+var oV=_mz(z,'decorate-title',['bind:__l',5,'title',1,'vueId',2],[],e,s,gg)
+_(cT,oV)
+var cW=_mz(z,'decorate-title',['bind:__l',8,'title',1,'vueId',2],[],e,s,gg)
+_(cT,cW)
+_(r,cT)
 return r
 }
 e_[x[4]]={f:m4,j:[],i:[],ti:[],ic:[]}
 d_[x[5]]={}
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var aDB=_n('view')
-_rz(z,aDB,'class',0,e,s,gg)
-var tEB=_mz(z,'uni-rate',['bind:__l',1,'disabled',1,'value',2,'vueId',3],[],e,s,gg)
-_(aDB,tEB)
-var eFB=_mz(z,'decorate-title',['bind:__l',5,'title',1,'vueId',2],[],e,s,gg)
-_(aDB,eFB)
-var bGB=_mz(z,'decorate-title',['bind:__l',8,'title',1,'vueId',2],[],e,s,gg)
-_(aDB,bGB)
-_(r,aDB)
 return r
 }
 e_[x[5]]={f:m5,j:[],i:[],ti:[],ic:[]}
 d_[x[6]]={}
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
+var aZ=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var t1=_mz(z,'uni-rate',['bind:__l',3,'disabled',1,'value',2,'vueId',3],[],e,s,gg)
+_(aZ,t1)
+_(r,aZ)
 return r
 }
 e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}
 d_[x[7]]={}
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var oJB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var fKB=_mz(z,'uni-rate',['bind:__l',3,'disabled',1,'value',2,'vueId',3],[],e,s,gg)
-_(oJB,fKB)
-_(r,oJB)
 return r
 }
 e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[8]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
+var o4=_mz(z,'uni-rate',['bind:__l',0,'disabled',1,'size',1,'value',2,'vueId',3],[],e,s,gg)
+_(r,o4)
 return r
 }
 e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var oNB=_n('view')
-_rz(z,oNB,'class',0,e,s,gg)
-var cOB=_mz(z,'navi-title',['bind:__l',1,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(oNB,cOB)
-var oPB=_mz(z,'q-swiper',['indicator_custom',-1,'indicator_dots',-1,'bind:__l',5,'bind:click',1,'data-event-opts',2,'durations',3,'height',4,'indicator_active_color',5,'indicator_color',6,'indicator_custom_set',7,'interval',8,'swiperItems',9,'vueId',10],[],e,s,gg)
-_(oNB,oPB)
-var lQB=_mz(z,'navi-title',['bind:__l',16,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(oNB,lQB)
-var aRB=_mz(z,'q-swiper',['indicator_custom',-1,'indicator_dots',-1,'circular',-1,'bind:__l',20,'bind:click',1,'data-event-opts',2,'durations',3,'height',4,'indicator_active_color',5,'indicator_color',6,'indicator_custom_set',7,'interval',8,'swiperItems',9,'vueId',10],[],e,s,gg)
-_(oNB,aRB)
-var tSB=_mz(z,'navi-title',['bind:__l',31,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(oNB,tSB)
-var eTB=_mz(z,'uni-rate',['bind:__l',35,'disabled',1,'value',2,'vueId',3],[],e,s,gg)
-_(oNB,eTB)
-var bUB=_mz(z,'navi-title',['bind:__l',39,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-_(oNB,bUB)
-var oVB=_mz(z,'uni-rate',['bind:__l',43,'disabled',1,'value',2,'vueId',3],[],e,s,gg)
-_(oNB,oVB)
-_(r,oNB)
+var o6=_n('view')
+_rz(z,o6,'class',0,e,s,gg)
+var f7=_mz(z,'navi-title',['bind:__l',1,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(o6,f7)
+var c8=_mz(z,'navi-title',['bind:__l',5,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(o6,c8)
+var h9=_n('view')
+_rz(z,h9,'class',9,e,s,gg)
+var o0=_mz(z,'angle-item',['bind:__l',10,'vueId',1],[],e,s,gg)
+_(h9,o0)
+var cAB=_mz(z,'angle-item',['bind:__l',12,'vueId',1],[],e,s,gg)
+_(h9,cAB)
+var oBB=_mz(z,'angle-item',['bind:__l',14,'vueId',1],[],e,s,gg)
+_(h9,oBB)
+var lCB=_mz(z,'angle-item',['bind:__l',16,'vueId',1],[],e,s,gg)
+_(h9,lCB)
+var aDB=_mz(z,'angle-item',['bind:__l',18,'vueId',1],[],e,s,gg)
+_(h9,aDB)
+var tEB=_mz(z,'angle-item',['bind:__l',20,'vueId',1],[],e,s,gg)
+_(h9,tEB)
+_(o6,h9)
+var eFB=_mz(z,'navi-title',['bind:__l',22,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(o6,eFB)
+var bGB=_n('view')
+_rz(z,bGB,'class',26,e,s,gg)
+var oHB=_mz(z,'angle-item',['bind:__l',27,'vueId',1],[],e,s,gg)
+_(bGB,oHB)
+var xIB=_mz(z,'angle-item',['bind:__l',29,'vueId',1],[],e,s,gg)
+_(bGB,xIB)
+var oJB=_mz(z,'angle-item',['bind:__l',31,'vueId',1],[],e,s,gg)
+_(bGB,oJB)
+var fKB=_mz(z,'angle-item',['bind:__l',33,'vueId',1],[],e,s,gg)
+_(bGB,fKB)
+var cLB=_mz(z,'angle-item',['bind:__l',35,'vueId',1],[],e,s,gg)
+_(bGB,cLB)
+var hMB=_mz(z,'angle-item',['bind:__l',37,'vueId',1],[],e,s,gg)
+_(bGB,hMB)
+_(o6,bGB)
+var oNB=_mz(z,'navi-title',['bind:__l',39,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
+_(o6,oNB)
+var cOB=_n('view')
+_rz(z,cOB,'class',43,e,s,gg)
+var oPB=_mz(z,'angle-item',['bind:__l',44,'vueId',1],[],e,s,gg)
+_(cOB,oPB)
+var lQB=_mz(z,'angle-item',['bind:__l',46,'vueId',1],[],e,s,gg)
+_(cOB,lQB)
+var aRB=_mz(z,'angle-item',['bind:__l',48,'vueId',1],[],e,s,gg)
+_(cOB,aRB)
+var tSB=_mz(z,'angle-item',['bind:__l',50,'vueId',1],[],e,s,gg)
+_(cOB,tSB)
+var eTB=_mz(z,'angle-item',['bind:__l',52,'vueId',1],[],e,s,gg)
+_(cOB,eTB)
+var bUB=_mz(z,'angle-item',['bind:__l',54,'vueId',1],[],e,s,gg)
+_(cOB,bUB)
+_(o6,cOB)
+_(r,o6)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
@@ -1424,7 +1398,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index/index","pages/search/search","pages/me/me","pages/care/care","pages/angle-info/angle-info"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"守护宝辈","compilerVersion":"2.0.1","usingComponents":{}};
+__wxAppCode__['app.json']={"pages":["pages/index/index","pages/search/search","pages/me/me","pages/care/care","pages/angle-info/angle-info"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#999999","selectedColor":"#4784FF","backgroundColor":"#ffffff","list":[{"pagePath":"pages/index/index","text":"首页","iconPath":"static/tab/tab_home.png","selectedIconPath":"static/tab/tab_home_s.png"},{"pagePath":"pages/care/care","text":"守护宝贝","iconPath":"static/tab/tab_dynamic.png","selectedIconPath":"static/tab/tab_dynamic_s.png"},{"pagePath":"pages/search/search","text":"寻找天使","iconPath":"static/tab/tab_connections.png","selectedIconPath":"static/tab/tab_connections_s.png"},{"pagePath":"pages/me/me","text":"我的","iconPath":"static/tab/tab_connections.png","selectedIconPath":"static/tab/tab_connections_s.png"}]},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"守护宝辈","compilerVersion":"2.0.1","usingComponents":{}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['components/decorate-title.json']={"usingComponents":{},"component":true};
@@ -1432,9 +1406,6 @@ __wxAppCode__['components/decorate-title.wxml']=$gwx('./components/decorate-titl
 
 __wxAppCode__['components/navi-title.json']={"usingComponents":{},"component":true};
 __wxAppCode__['components/navi-title.wxml']=$gwx('./components/navi-title.wxml');
-
-__wxAppCode__['components/QS-Swiper.json']={"usingComponents":{},"component":true};
-__wxAppCode__['components/QS-Swiper.wxml']=$gwx('./components/QS-Swiper.wxml');
 
 __wxAppCode__['components/uni-icon/uni-icon.json']={"usingComponents":{},"component":true};
 __wxAppCode__['components/uni-icon/uni-icon.wxml']=$gwx('./components/uni-icon/uni-icon.wxml');
@@ -1445,7 +1416,7 @@ __wxAppCode__['components/uni-rate/uni-rate.wxml']=$gwx('./components/uni-rate/u
 __wxAppCode__['pages/angle-info/angle-info.json']={"navigationBarTitleText":"李博天使","usingComponents":{"uni-rate":"/components/uni-rate/uni-rate","decorate-title":"/components/decorate-title"}};
 __wxAppCode__['pages/angle-info/angle-info.wxml']=$gwx('./pages/angle-info/angle-info.wxml');
 
-__wxAppCode__['pages/care/care.json']={"usingComponents":{}};
+__wxAppCode__['pages/care/care.json']={"navigationBarTitleText":"守护宝辈","usingComponents":{}};
 __wxAppCode__['pages/care/care.wxml']=$gwx('./pages/care/care.wxml');
 
 __wxAppCode__['pages/index/index.json']={"navigationStyle":"custom","titleNView":{"type":"transparent"},"usingComponents":{"uni-rate":"/components/uni-rate/uni-rate"}};
@@ -1454,7 +1425,10 @@ __wxAppCode__['pages/index/index.wxml']=$gwx('./pages/index/index.wxml');
 __wxAppCode__['pages/me/me.json']={"navigationStyle":"custom","titleNView":{"type":"transparent"},"usingComponents":{}};
 __wxAppCode__['pages/me/me.wxml']=$gwx('./pages/me/me.wxml');
 
-__wxAppCode__['pages/search/search.json']={"navigationStyle":"custom","titleNView":{"type":"transparent"},"usingComponents":{"navi-title":"/components/navi-title","q-swiper":"/components/QS-Swiper","uni-rate":"/components/uni-rate/uni-rate"}};
+__wxAppCode__['pages/search/components/angle-item.json']={"usingComponents":{"uni-rate":"/components/uni-rate/uni-rate"},"component":true};
+__wxAppCode__['pages/search/components/angle-item.wxml']=$gwx('./pages/search/components/angle-item.wxml');
+
+__wxAppCode__['pages/search/search.json']={"navigationStyle":"custom","titleNView":{"type":"transparent"},"usingComponents":{"navi-title":"/components/navi-title","uni-rate":"/components/uni-rate/uni-rate","angle-item":"/pages/search/components/angle-item"}};
 __wxAppCode__['pages/search/search.wxml']=$gwx('./pages/search/search.wxml');
 
 
@@ -1467,8 +1441,8 @@ define('common/runtime.js',function(require, module, exports, window, document, 
 
 (function (e) {
   function t(t) {
-    for (var r, o, a = t[0], c = t[1], l = t[2], s = 0, p = []; s < a.length; s++) {
-      o = a[s], i[o] && p.push(i[o][0]), i[o] = 0;
+    for (var r, o, u = t[0], c = t[1], l = t[2], s = 0, p = []; s < u.length; s++) {
+      o = u[s], i[o] && p.push(i[o][0]), i[o] = 0;
     }
 
     for (r in c) {
@@ -1481,17 +1455,17 @@ define('common/runtime.js',function(require, module, exports, window, document, 
       p.shift()();
     }
 
-    return u.push.apply(u, l || []), n();
+    return a.push.apply(a, l || []), n();
   }
 
   function n() {
-    for (var e, t = 0; t < u.length; t++) {
-      for (var n = u[t], r = !0, o = 1; o < n.length; o++) {
-        var a = n[o];
-        0 !== i[a] && (r = !1);
+    for (var e, t = 0; t < a.length; t++) {
+      for (var n = a[t], r = !0, o = 1; o < n.length; o++) {
+        var u = n[o];
+        0 !== i[u] && (r = !1);
       }
 
-      r && (u.splice(t--, 1), e = c(c.s = n[0]));
+      r && (a.splice(t--, 1), e = c(c.s = n[0]));
     }
 
     return e;
@@ -1504,9 +1478,9 @@ define('common/runtime.js',function(require, module, exports, window, document, 
       i = {
     "common/runtime": 0
   },
-      u = [];
+      a = [];
 
-  function a(e) {
+  function u(e) {
     return c.p + "" + e + ".js";
   }
 
@@ -1524,36 +1498,36 @@ define('common/runtime.js',function(require, module, exports, window, document, 
     var t = [],
         n = {
       "components/uni-rate/uni-rate": 1,
-      "components/QS-Swiper": 1,
       "components/navi-title": 1,
+      "pages/search/components/angle-item": 1,
       "components/decorate-title": 1,
       "components/uni-icon/uni-icon": 1
     };
     o[e] ? t.push(o[e]) : 0 !== o[e] && n[e] && t.push(o[e] = new Promise(function (t, n) {
       for (var r = ({
         "components/uni-rate/uni-rate": "components/uni-rate/uni-rate",
-        "components/QS-Swiper": "components/QS-Swiper",
         "components/navi-title": "components/navi-title",
+        "pages/search/components/angle-item": "pages/search/components/angle-item",
         "components/decorate-title": "components/decorate-title",
         "components/uni-icon/uni-icon": "components/uni-icon/uni-icon"
-      }[e] || e) + ".wxss", i = c.p + r, u = document.getElementsByTagName("link"), a = 0; a < u.length; a++) {
-        var l = u[a],
+      }[e] || e) + ".wxss", i = c.p + r, a = document.getElementsByTagName("link"), u = 0; u < a.length; u++) {
+        var l = a[u],
             s = l.getAttribute("data-href") || l.getAttribute("href");
         if ("stylesheet" === l.rel && (s === r || s === i)) return t();
       }
 
       var p = document.getElementsByTagName("style");
 
-      for (a = 0; a < p.length; a++) {
-        l = p[a], s = l.getAttribute("data-href");
+      for (u = 0; u < p.length; u++) {
+        l = p[u], s = l.getAttribute("data-href");
         if (s === r || s === i) return t();
       }
 
       var f = document.createElement("link");
       f.rel = "stylesheet", f.type = "text/css", f.onload = t, f.onerror = function (t) {
         var r = t && t.target && t.target.src || i,
-            u = new Error("Loading CSS chunk " + e + " failed.\n(" + r + ")");
-        u.request = r, delete o[e], f.parentNode.removeChild(f), n(u);
+            a = new Error("Loading CSS chunk " + e + " failed.\n(" + r + ")");
+        a.request = r, delete o[e], f.parentNode.removeChild(f), n(a);
       }, f.href = i;
       var m = document.getElementsByTagName("head")[0];
       m.appendChild(f);
@@ -1562,13 +1536,13 @@ define('common/runtime.js',function(require, module, exports, window, document, 
     }));
     var r = i[e];
     if (0 !== r) if (r) t.push(r[2]);else {
-      var u = new Promise(function (t, n) {
+      var a = new Promise(function (t, n) {
         r = i[e] = [t, n];
       });
-      t.push(r[2] = u);
+      t.push(r[2] = a);
       var l,
           s = document.createElement("script");
-      s.charset = "utf-8", s.timeout = 120, c.nc && s.setAttribute("nonce", c.nc), s.src = a(e), l = function l(t) {
+      s.charset = "utf-8", s.timeout = 120, c.nc && s.setAttribute("nonce", c.nc), s.src = u(e), l = function l(t) {
         s.onerror = s.onload = null, clearTimeout(p);
         var n = i[e];
 
@@ -1576,8 +1550,8 @@ define('common/runtime.js',function(require, module, exports, window, document, 
           if (n) {
             var r = t && ("load" === t.type ? "missing" : t.type),
                 o = t && t.target && t.target.src,
-                u = new Error("Loading chunk " + e + " failed.\n(" + r + ": " + o + ")");
-            u.type = r, u.request = o, n[1](u);
+                a = new Error("Loading chunk " + e + " failed.\n(" + r + ": " + o + ")");
+            a.type = r, a.request = o, n[1](a);
           }
 
           i[e] = void 0;
@@ -1835,200 +1809,6 @@ define('components/navi-title.js',function(require, module, exports, window, doc
 }, [['components/navi-title-create-component']]]);
 });
 require('components/navi-title.js');
-__wxRoute = 'components/QS-Swiper';__wxRouteBegin = true;__wxAppCurrentFile__ = 'components/QS-Swiper.js';
-
-define('components/QS-Swiper.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-"use strict";
-
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["components/QS-Swiper"], {
-  "08c5": function c5(t, e, i) {
-    "use strict";
-
-    Object.defineProperty(e, "__esModule", {
-      value: !0
-    }), e.default = void 0;
-    var n = {
-      props: {
-        swiperItems: {
-          type: Array,
-          default: function _default() {
-            return [];
-          }
-        },
-        height: {
-          type: String,
-          default: "250px"
-        },
-        duration: {
-          type: Number,
-          default: 1e3
-        },
-        indicator_dots: {
-          type: Boolean,
-          default: !1
-        },
-        indicator_color: {
-          type: String,
-          default: "rgba(0, 0, 0, .3)"
-        },
-        indicator_active_color: {
-          type: String,
-          default: "#000000"
-        },
-        autoplay: {
-          type: Boolean,
-          default: !1
-        },
-        interval: {
-          type: Number,
-          default: 5e3
-        },
-        circular: {
-          type: Boolean,
-          default: !1
-        },
-        vertical: {
-          type: Boolean,
-          default: !1
-        },
-        previous_margin: {
-          type: String,
-          default: "0px"
-        },
-        next_margin: {
-          type: String,
-          default: "0px"
-        },
-        display_multiple_items: {
-          type: Number,
-          default: 1
-        },
-        skip_hidden_item_layout: {
-          type: Boolean,
-          default: !1
-        },
-        indicator_custom: {
-          type: Boolean,
-          default: !1
-        },
-        indicator_custom_set: {
-          type: Object,
-          default: function _default() {
-            return {
-              indicator_view: "width:100%;height:40px;bottom:0;left:0;display:flex;flex-direction:row;justify-content: center;align-items: center;",
-              indicator_default_dots: "height:20px;width:20px;border-radius:50%;margin:0 5px;display:flex;flex-direction:row;justify-content: center;align-items: center;font-size:12px;",
-              indicator_unselect_dots: "background-color:rgba(0,0,0,.3);",
-              indicator_select_dots: "background-color:rgba(0,0,0,.7);transform:scale(1.2);"
-            };
-          }
-        }
-      },
-      data: function data() {
-        var t = this.duration,
-            e = "",
-            i = "",
-            n = "",
-            a = "";
-        return this.indicator_custom && (e = this.indicator_custom_set.indicator_view, i = this.indicator_custom_set.indicator_default_dots, n = this.indicator_custom_set.indicator_select_dots, a = this.indicator_custom_set.indicator_unselect_dots), {
-          current: 0,
-          onReady: !1,
-          time: t,
-          classObj: {
-            transition: "transition: all " + t / 1e3 + "s;",
-            indicator_view: e,
-            indicator_default_dots: i,
-            indicator_unselect_dots: a,
-            indicator_select_dots: n
-          }
-        };
-      },
-      methods: {
-        swiperChange: function swiperChange(t) {
-          this.current = t.detail.current, this.$emit("change", t);
-        },
-        animationfinish: function animationfinish(t) {
-          this.$emit("animationfinish", t);
-        },
-        click: function click(t) {
-          this.$emit("click", t);
-        }
-      },
-      onReady: function onReady() {
-        this.onReady = !0;
-      }
-    };
-    e.default = n;
-  },
-  2458: function _(t, e, i) {
-    "use strict";
-
-    var n = i("9bd6"),
-        a = i.n(n);
-    a.a;
-  },
-  2650: function _(t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var n = i("08c5"),
-        a = i.n(n);
-
-    for (var o in n) {
-      "default" !== o && function (t) {
-        i.d(e, t, function () {
-          return n[t];
-        });
-      }(o);
-    }
-
-    e["default"] = a.a;
-  },
-  "2dac": function dac(t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var n = i("b9f7"),
-        a = i("2650");
-
-    for (var o in a) {
-      "default" !== o && function (t) {
-        i.d(e, t, function () {
-          return a[t];
-        });
-      }(o);
-    }
-
-    i("2458");
-    var r = i("2877"),
-        c = Object(r["a"])(a["default"], n["a"], n["b"], !1, null, "76ac8c13", null);
-    e["default"] = c.exports;
-  },
-  "9bd6": function bd6(t, e, i) {},
-  b9f7: function b9f7(t, e, i) {
-    "use strict";
-
-    var n = function n() {
-      var t = this,
-          e = t.$createElement;
-      t._self._c;
-    },
-        a = [];
-
-    i.d(e, "a", function () {
-      return n;
-    }), i.d(e, "b", function () {
-      return a;
-    });
-  }
-}]);
-;
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push(['components/QS-Swiper-create-component', {
-  'components/QS-Swiper-create-component': function componentsQSSwiperCreateComponent(module, exports, __webpack_require__) {
-    __webpack_require__('6e42')['createComponent'](__webpack_require__("2dac"));
-  }
-}, [['components/QS-Swiper-create-component']]]);
-});
-require('components/QS-Swiper.js');
 __wxRoute = 'components/uni-icon/uni-icon';__wxRouteBegin = true;__wxAppCurrentFile__ = 'components/uni-icon/uni-icon.js';
 
 define('components/uni-icon/uni-icon.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
@@ -2288,23 +2068,126 @@ define('components/uni-rate/uni-rate.js',function(require, module, exports, wind
 }, [['components/uni-rate/uni-rate-create-component']]]);
 });
 require('components/uni-rate/uni-rate.js');
+__wxRoute = 'pages/search/components/angle-item';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/search/components/angle-item.js';
+
+define('pages/search/components/angle-item.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+"use strict";
+
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/search/components/angle-item"], {
+  "4de3": function de3(n, t, e) {
+    "use strict";
+
+    e.r(t);
+    var u = e("72e9"),
+        r = e("68ec");
+
+    for (var a in r) {
+      "default" !== a && function (n) {
+        e.d(t, n, function () {
+          return r[n];
+        });
+      }(a);
+    }
+
+    e("f9d5");
+    var o = e("2877"),
+        c = Object(o["a"])(r["default"], u["a"], u["b"], !1, null, null, null);
+    t["default"] = c.exports;
+  },
+  "5d93": function d93(n, t, e) {
+    "use strict";
+
+    Object.defineProperty(t, "__esModule", {
+      value: !0
+    }), t.default = void 0;
+
+    var u = function u() {
+      return e.e("components/uni-rate/uni-rate").then(e.bind(null, "95e2"));
+    },
+        r = {
+      components: {
+        uniRate: u
+      },
+      data: function data() {
+        return {};
+      },
+      computed: {
+        icon: function icon() {
+          var n = Math.floor(10 * Math.random() + 1);
+          return n % 2 === 0 ? "http://qnimage.xiteng.com/person002.png" : "http://qnimage.xiteng.com/person001.png";
+        }
+      }
+    };
+
+    t.default = r;
+  },
+  "671e": function e(n, t, _e) {},
+  "68ec": function ec(n, t, e) {
+    "use strict";
+
+    e.r(t);
+    var u = e("5d93"),
+        r = e.n(u);
+
+    for (var a in u) {
+      "default" !== a && function (n) {
+        e.d(t, n, function () {
+          return u[n];
+        });
+      }(a);
+    }
+
+    t["default"] = r.a;
+  },
+  "72e9": function e9(n, t, e) {
+    "use strict";
+
+    var u = function u() {
+      var n = this,
+          t = n.$createElement;
+      n._self._c;
+    },
+        r = [];
+
+    e.d(t, "a", function () {
+      return u;
+    }), e.d(t, "b", function () {
+      return r;
+    });
+  },
+  f9d5: function f9d5(n, t, e) {
+    "use strict";
+
+    var u = e("671e"),
+        r = e.n(u);
+    r.a;
+  }
+}]);
+;
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push(['pages/search/components/angle-item-create-component', {
+  'pages/search/components/angle-item-create-component': function pagesSearchComponentsAngleItemCreateComponent(module, exports, __webpack_require__) {
+    __webpack_require__('6e42')['createComponent'](__webpack_require__("4de3"));
+  }
+}, [['pages/search/components/angle-item-create-component']]]);
+});
+require('pages/search/components/angle-item.js');
 
 __wxRoute = 'pages/index/index';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/index/index.js';
 
 define('pages/index/index.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index/index"],{"9b37":function(n,e,t){"use strict";t.r(e);var a=t("c66c"),o=t("d664");for(var u in o)"default"!==u&&function(n){t.d(e,n,function(){return o[n]})}(u);t("e2c1");var i=t("2877"),c=Object(i["a"])(o["default"],a["a"],a["b"],!1,null,null,null);e["default"]=c.exports},c66c:function(n,e,t){"use strict";var a=function(){var n=this,e=n.$createElement;n._self._c},o=[];t.d(e,"a",function(){return a}),t.d(e,"b",function(){return o})},c6b0:function(n,e,t){},d664:function(n,e,t){"use strict";t.r(e);var a=t("e21e"),o=t.n(a);for(var u in a)"default"!==u&&function(n){t.d(e,n,function(){return a[n]})}(u);e["default"]=o.a},e21e:function(n,e,t){"use strict";(function(n){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=function(){return t.e("components/uni-rate/uni-rate").then(t.bind(null,"95e2"))},o={data:function(){return{title:"Hello",latitude:39.909,longitude:116.39742,covers:[{latitude:39.909,longitude:116.39742,iconPath:"../../../static/location.png"},{latitude:39.9,longitude:116.39,iconPath:"../../../static/location.png"}]}},onLoad:function(){},methods:{goCare:function(){n.navigateTo({url:"/pages/care/care"})},goSearch:function(){n.navigateTo({url:"/pages/search/search"})},goMe:function(){n.navigateTo({url:"/pages/me/me"})},goAngle:function(){n.navigateTo({url:"/pages/angle-info/angle-info"})}},components:{uniRate:a}};e.default=o}).call(this,t("6e42")["default"])},e2c1:function(n,e,t){"use strict";var a=t("c6b0"),o=t.n(a);o.a}},[["78fe","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index/index"],{"75bb":function(n,e,t){"use strict";var a=function(){var n=this,e=n.$createElement;n._self._c},o=[];t.d(e,"a",function(){return a}),t.d(e,"b",function(){return o})},"9b37":function(n,e,t){"use strict";t.r(e);var a=t("75bb"),o=t("d664");for(var u in o)"default"!==u&&function(n){t.d(e,n,function(){return o[n]})}(u);t("e2c1");var i=t("2877"),c=Object(i["a"])(o["default"],a["a"],a["b"],!1,null,null,null);e["default"]=c.exports},c6b0:function(n,e,t){},d664:function(n,e,t){"use strict";t.r(e);var a=t("e21e"),o=t.n(a);for(var u in a)"default"!==u&&function(n){t.d(e,n,function(){return a[n]})}(u);e["default"]=o.a},e21e:function(n,e,t){"use strict";(function(n){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=function(){return t.e("components/uni-rate/uni-rate").then(t.bind(null,"95e2"))},o={data:function(){return{title:"Hello",latitude:39.909,longitude:116.39742,covers:[{latitude:39.909,longitude:116.39742,iconPath:"../../../static/location.png"},{latitude:39.9,longitude:116.39,iconPath:"../../../static/location.png"}]}},onLoad:function(){},methods:{goCare:function(){n.navigateTo({url:"/pages/care/care"})},goSearch:function(){n.navigateTo({url:"/pages/search/search"})},goMe:function(){n.navigateTo({url:"/pages/me/me"})},goAngle:function(){n.navigateTo({url:"/pages/angle-info/angle-info"})}},components:{uniRate:a}};e.default=o}).call(this,t("6e42")["default"])},e2c1:function(n,e,t){"use strict";var a=t("c6b0"),o=t.n(a);o.a}},[["78fe","common/runtime","common/vendor"]]]);
 });
 require('pages/index/index.js');
 __wxRoute = 'pages/search/search';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/search/search.js';
 
 define('pages/search/search.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/search/search"],{"2aa5":function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=function(){return n.e("components/navi-title").then(n.bind(null,"fb94"))},i=function(){return n.e("components/QS-Swiper").then(n.bind(null,"2dac"))},r=function(){return n.e("components/uni-rate/uni-rate").then(n.bind(null,"95e2"))},o={data:function(){return{indicator_custom_set_3:{indicator_view:"bottom:0;left:50%;padding:1px;display:flex;flex-direction:row;transform:translateX(-50%);",indicator_default_dots:"height:2px;margin:0 2px;display:flex;flex-direction:row;justify-content: center;align-items: center;",indicator_unselect_dots:"width:10px;background-color:rgba(0,0,0,.3);",indicator_select_dots:"width:20px;background-color:rgba(0,0,0,.7);"},height_2:"120upx",height_3:"223upx",swiperItems_3:[{itemArray:[{type:"image",css:"left:0;top:0;bottom:0;width:100%",value:"../../static/search/angel_banner@2x.png"}]},{itemArray:[{type:"image",css:"left:0;top:0;bottom:5%;width:100%",value:"../../static/search/angel_banner@2x.png"}]},{bgColor:"#FFFFFF",itemArray:[{type:"image",css:"left:0;top:0;bottom:0;width:100%",value:"../../static/search/angel_banner@2x.png"}]}],swiperItems_2:[{itemArray:[{type:"image",css:"left:0;top:0;bottom:0;width:60%",value:"../../static/search/angel_banner@2x.png"}]},{itemArray:[{type:"image",css:"left:0;top:0;bottom:5%;width:60%",value:"../../static/search/angel_banner@2x.png"}]},{bgColor:"#FFFFFF",itemArray:[{type:"image",css:"left:0;top:0;bottom:0;width:60%",value:"../../static/search/angel_banner@2x.png"}]}]}},methods:{swiperClick:function(e){t.showToast({title:"点击了"+e})}},components:{naviTitle:a,QSwiper:i,uniRate:r}};e.default=o}).call(this,n("6e42")["default"])},"5a7e":function(t,e,n){},"856b":function(t,e,n){"use strict";n.r(e);var a=n("9da2"),i=n("b72f");for(var r in i)"default"!==r&&function(t){n.d(e,t,function(){return i[t]})}(r);n("aedf");var o=n("2877"),c=Object(o["a"])(i["default"],a["a"],a["b"],!1,null,null,null);e["default"]=c.exports},"9da2":function(t,e,n){"use strict";var a=function(){var t=this,e=t.$createElement;t._self._c},i=[];n.d(e,"a",function(){return a}),n.d(e,"b",function(){return i})},aedf:function(t,e,n){"use strict";var a=n("5a7e"),i=n.n(a);i.a},b72f:function(t,e,n){"use strict";n.r(e);var a=n("2aa5"),i=n.n(a);for(var r in a)"default"!==r&&function(t){n.d(e,t,function(){return a[t]})}(r);e["default"]=i.a}},[["9397","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/search/search"],{"2aa5":function(n,e,t){"use strict";(function(n){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=function(){return t.e("components/navi-title").then(t.bind(null,"fb94"))},r=function(){return t.e("pages/search/components/angle-item").then(t.bind(null,"4de3"))},u=function(){return t.e("components/uni-rate/uni-rate").then(t.bind(null,"95e2"))},c={data:function(){return{current:0,mode:"long",data:[],max:0,imgs:["../../static/search/angel_banner@2x.png","../../static/search/angel_banner@2x.png","../../static/search/angel_banner@2x.png"]}},methods:{change:function(n){this.current=n.detail.current},swiperClick:function(e){n.showToast({title:"点击了"+e})}},components:{naviTitle:a,uniRate:u,angleItem:r}};e.default=c}).call(this,t("6e42")["default"])},"5a7e":function(n,e,t){},"856b":function(n,e,t){"use strict";t.r(e);var a=t("e0d2"),r=t("b72f");for(var u in r)"default"!==u&&function(n){t.d(e,n,function(){return r[n]})}(u);t("aedf");var c=t("2877"),i=Object(c["a"])(r["default"],a["a"],a["b"],!1,null,null,null);e["default"]=i.exports},aedf:function(n,e,t){"use strict";var a=t("5a7e"),r=t.n(a);r.a},b72f:function(n,e,t){"use strict";t.r(e);var a=t("2aa5"),r=t.n(a);for(var u in a)"default"!==u&&function(n){t.d(e,n,function(){return a[n]})}(u);e["default"]=r.a},e0d2:function(n,e,t){"use strict";var a=function(){var n=this,e=n.$createElement;n._self._c},r=[];t.d(e,"a",function(){return a}),t.d(e,"b",function(){return r})}},[["9397","common/runtime","common/vendor"]]]);
 });
 require('pages/search/search.js');
 __wxRoute = 'pages/me/me';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/me/me.js';
 
 define('pages/me/me.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/me/me"],{"1bdc":function(n,t,e){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var u={data:function(){return{}},methods:{}};t.default=u},"5b04":function(n,t,e){"use strict";e.r(t);var u=e("1bdc"),r=e.n(u);for(var c in u)"default"!==c&&function(n){e.d(t,n,function(){return u[n]})}(c);t["default"]=r.a},8070:function(n,t,e){"use strict";var u=function(){var n=this,t=n.$createElement;n._self._c},r=[];e.d(t,"a",function(){return u}),e.d(t,"b",function(){return r})},"9dfb":function(n,t,e){"use strict";var u=e("c28c"),r=e.n(u);r.a},c28c:function(n,t,e){},f963:function(n,t,e){"use strict";e.r(t);var u=e("8070"),r=e("5b04");for(var c in r)"default"!==c&&function(n){e.d(t,n,function(){return r[n]})}(c);e("9dfb");var a=e("2877"),o=Object(a["a"])(r["default"],u["a"],u["b"],!1,null,null,null);t["default"]=o.exports}},[["9517","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/me/me"],{"1bdc":function(n,t,e){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var u={data:function(){return{}},methods:{}};t.default=u},"5b04":function(n,t,e){"use strict";e.r(t);var u=e("1bdc"),r=e.n(u);for(var c in u)"default"!==c&&function(n){e.d(t,n,function(){return u[n]})}(c);t["default"]=r.a},"6df5":function(n,t,e){"use strict";var u=function(){var n=this,t=n.$createElement;n._self._c},r=[];e.d(t,"a",function(){return u}),e.d(t,"b",function(){return r})},"9dfb":function(n,t,e){"use strict";var u=e("c28c"),r=e.n(u);r.a},c28c:function(n,t,e){},f963:function(n,t,e){"use strict";e.r(t);var u=e("6df5"),r=e("5b04");for(var c in r)"default"!==c&&function(n){e.d(t,n,function(){return r[n]})}(c);e("9dfb");var a=e("2877"),f=Object(a["a"])(r["default"],u["a"],u["b"],!1,null,null,null);t["default"]=f.exports}},[["9517","common/runtime","common/vendor"]]]);
 });
 require('pages/me/me.js');
 __wxRoute = 'pages/care/care';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/care/care.js';

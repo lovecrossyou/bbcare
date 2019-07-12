@@ -2,17 +2,21 @@
 	<view class="main">
 		<view class="title-wrapper">
 			<naviTitle title="寻找天使">
-				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="search"></image>
+				<image src="../../static/search/angle_sousuo.png" class="search"></image>
 			</naviTitle>
 		</view>
-		<QSwiper :swiperItems="swiperItems_3" :durations="1000" indicator_dots indicator_color="rgba(0, 0, 0, .3)"
-		 indicator_active_color="#000000" :interval="1000" @click="swiperClick($event)" indicator_custom
-		 :indicator_custom_set="indicator_custom_set_3" :height="height_3">
-		</QSwiper>
 
+		<swiper class="swiper-tall" @change="change" :current="swiperCurrentIndex">
+			<swiper-item class="swiper-container" v-for="(img, index) in imgs" :key="index" :item-id="img" :data-year="index">
+				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="swiper-item">
+				</image>
+			</swiper-item>
+		</swiper>
+
+		<!-- 救助天使 -->
 		<view class="title-wrapper">
 			<naviTitle title="救助天使 ">
-				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="arrow-right"></image>
+				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
 				<view slot="desc">
 					<view class="title-desc">
 						家庭私人医生，如有意外，随叫随到
@@ -21,53 +25,44 @@
 			</naviTitle>
 		</view>
 
-		<view class="angle-list">
-			<QSwiper circular :swiperItems="swiperItems_2" :durations="1000" indicator_dots indicator_color="rgba(0, 0, 0, .3)"
-			 indicator_active_color="#000000" :interval="1000" @click="swiperClick($event)" indicator_custom
-			 :indicator_custom_set="indicator_custom_set_3" :height="height_2">
-			</QSwiper>
-			<!-- <view class="angle-item">
-				<image class="angle-avatar" src="../../static/search/angle_renwu_1@2x.png" mode=""></image>
-				<view class="item-desc">
-					心肺功能专家
-				</view>
-				<view class="angle-item-star-wrapper">
-					<uni-rate disabled="true" value="4"></uni-rate>
-					<view class="item_text">
-						156分
-					</view>
-				</view>
-			</view> -->
-		</view>
+		<scroll-view scroll-x="true" class="scroll-view_H" style="width: 100%" scroll-with-animation>
+			<view class="companys">
+				<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+			</view>
+		</scroll-view>
 
+		<!-- 维修天使 -->
 		<view class="title-wrapper">
 			<naviTitle title="维修天使 ">
-				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="arrow-right"></image>
+				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
 				<view slot="desc">
 					<view class="title-desc">
 						锅碗瓢盆样样能修
 					</view>
 				</view>
 			</naviTitle>
-		</view>
-		<view class="angle-list">
-			<view class="angle-item">
-				<image class="angle-avatar" src="../../static/search/angle_renwu_1@2x.png" mode=""></image>
-				<view class="item-desc">
-					电器小能手
-				</view>
-				<view class="angle-item-star-wrapper">
-					<uni-rate disabled="true" value="4"></uni-rate>
-					<view class="item_text">
-						156分
-					</view>
-				</view>
-			</view>
 		</view>
 
+		<scroll-view scroll-x="true" class="scroll-view_H" style="width: 100%" scroll-with-animation>
+			<view class="companys">
+				<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+			</view>
+		</scroll-view>
+
+		<!-- 设备天使 -->
 		<view class="title-wrapper">
 			<naviTitle title="设备天使 ">
-				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="arrow-right"></image>
+				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
 				<view slot="desc">
 					<view class="title-desc">
 						锅碗瓢盆样样能修
@@ -75,82 +70,44 @@
 				</view>
 			</naviTitle>
 		</view>
-		<view class="angle-list">
-			<view class="angle-item">
-				<image class="angle-avatar" src="http://qnimage.xiteng.com/angel_banner@2x.png" mode=""></image>
-				<view class="item-desc">
-					上门维修速度快
+
+		<view style="width: 100%;">
+			<scroll-view scroll-x="true" class="scroll-view_H" style="width: 100%" scroll-with-animation>
+				<view class="companys">
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
+					<angleItem></angleItem>
 				</view>
-				<view class="angle-item-star-wrapper">
-					<uni-rate disabled="true" value="4"></uni-rate>
-					<view class="item_text">
-						156分
-					</view>
-				</view>
-			</view>
+			</scroll-view>
 		</view>
+
 	</view>
 </template>
 
 <script>
 	import naviTitle from "@/components/navi-title.vue"
-	import QSwiper from '@/components/QS-Swiper.vue';
+	import angleItem from "./components/angle-item.vue"
 	import uniRate from "@/components/uni-rate/uni-rate.vue"
 
 	export default {
 		data() {
 			return {
-				indicator_custom_set_3: {
-					indicator_view: 'bottom:0;left:50%;padding:1px;display:flex;flex-direction:row;transform:translateX(-50%);',
-					indicator_default_dots: 'height:2px;margin:0 2px;display:flex;flex-direction:row;justify-content: center;align-items: center;',
-					indicator_unselect_dots: 'width:10px;background-color:rgba(0,0,0,.3);',
-					indicator_select_dots: 'width:20px;background-color:rgba(0,0,0,.7);'
-				},
-				height_2: '120upx',
-				height_3: '223upx',
-				swiperItems_3: [{ //元素级 该数据有多少长度则swiper-item有多少项（就是有几页）
-					itemArray: [{
-						type: 'image', //image类型
-						css: 'left:0;top:0;bottom:0;width:100%',
-						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
-					}]
-				}, {
-					itemArray: [{
-						type: 'image',
-						css: 'left:0;top:0;bottom:5%;width:100%',
-						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
-					}]
-				}, {
-					bgColor: '#FFFFFF',
-					itemArray: [{
-						type: 'image',
-						css: 'left:0;top:0;bottom:0;width:100%',
-						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
-					}]
-				}],
-				swiperItems_2: [{ //元素级 该数据有多少长度则swiper-item有多少项（就是有几页）
-					itemArray: [{
-						type: 'image', //image类型
-						css: 'left:0;top:0;bottom:0;width:60%',
-						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
-					}]
-				}, {
-					itemArray: [{
-						type: 'image',
-						css: 'left:0;top:0;bottom:5%;width:60%',
-						value: '../../static/search/angel_banner@2x.png', //该项的value， 图片类型为图片路径
-					}]
-				}, {
-					bgColor: '#FFFFFF',
-					itemArray: [{
-						type: 'image',
-						css: 'left:0;top:0;bottom:0;width:60%',
-						value: 'http://qnimage.xiteng.com/angel_banner@2x.png', //该项的value， 图片类型为图片路径
-					}]
-				}],
+				current: 0,
+				mode: 'long',
+				data: [],
+				max: 0,
+				imgs: ['../../static/search/angel_banner@2x.png', '../../static/search/angel_banner@2x.png',
+					'../../static/search/angel_banner@2x.png'
+				],
 			}
 		},
 		methods: {
+			change(e) {
+				this.current = e.detail.current;
+			},
 			swiperClick(e) {
 				uni.showToast({
 					title: '点击了' + e
@@ -159,8 +116,8 @@
 		},
 		components: {
 			naviTitle,
-			QSwiper,
-			uniRate
+			uniRate,
+			angleItem
 		}
 	}
 </script>
@@ -172,11 +129,83 @@
 		width: 100%;
 	}
 
-	.angle-list {
+	.swiper-jiuzhu {
+		width: 750upx;
+		height: 400upx;
+
+	}
+
+	.swiper-item-jiuzhu {
+		width: 388upx;
+		height: 400upx;
+		background: #007AFF;
+		display: inline-block;
+		/* overflow-x: auto; */
+	}
+
+	.swiper-container {
+		display: flex;
+		flex-direction: column;
+		height: 400upx;
+		width: 100%;
+		position: relative;
+	}
+
+	.swiper-item {
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+		/* margin-left: 20upx; */
+		/* margin-right: 10upx; */
+		height: 280upx;
+		width: 670upx;
+		text-align: center;
+		border-radius: 8upx;
+	}
+
+
+	.swiper-tall {
+		display: flex;
+		/* align-items: center; */
+		height: 223upx;
+		background-color: #ffffff;
+		width: 100%;
+	}
+
+	.vip-items {
+		width: 100%;
+		/* padding-top: 60upx; */
 		display: flex;
 		flex-direction: row;
-		/* height: 400upx; */
 		justify-content: space-between;
+		padding: 60upx;
+		box-sizing: border-box;
+		/* background: #FFFFFF; */
+	}
+
+	.vip-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+
+
+	.title {
+		padding-top: 10upx;
+		font-size: 28upx;
+		font-family: PingFang-SC-Medium;
+		font-weight: 500;
+		color: rgba(31, 31, 31, 1);
+	}
+
+	.desc {
+		font-size: 24upx;
+		font-family: PingFang-SC-Medium;
+		font-weight: 500;
+		color: rgba(153, 153, 153, 1);
+		text-align: center;
 	}
 
 	.angle-item {
@@ -212,6 +241,8 @@
 	.title-desc {
 		font-size: 28upx;
 		color: #999999;
+		padding-top: 6upx;
+		box-sizing: border-box;
 	}
 
 	.search {
@@ -226,5 +257,19 @@
 
 	.title-wrapper {
 		margin: 40upx 0 40upx 0;
+	}
+
+	.scroll-view_H {
+		width: 100%;
+		overflow: scroll;
+		overflow-x: hidden;
+	}
+
+	.companys {
+		display: flex;
+		flex-direction: row;
+		width: auto;
+		height: 400upx;
+		overflow-x: scroll;
 	}
 </style>

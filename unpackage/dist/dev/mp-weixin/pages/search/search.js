@@ -98,12 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var naviTitle = function naviTitle() {return __webpack_require__.e(/*! import() | components/navi-title */ "components/navi-title").then(__webpack_require__.bind(null, /*! @/components/navi-title.vue */ "../../../../../../Users/zhu/Desktop/ehealth/bbcare/components/navi-title.vue"));};var QSwiper = function QSwiper() {return __webpack_require__.e(/*! import() | components/QS-Swiper */ "components/QS-Swiper").then(__webpack_require__.bind(null, /*! @/components/QS-Swiper.vue */ "../../../../../../Users/zhu/Desktop/ehealth/bbcare/components/QS-Swiper.vue"));};var uniRate = function uniRate() {return __webpack_require__.e(/*! import() | components/uni-rate/uni-rate */ "components/uni-rate/uni-rate").then(__webpack_require__.bind(null, /*! @/components/uni-rate/uni-rate.vue */ "../../../../../../Users/zhu/Desktop/ehealth/bbcare/components/uni-rate/uni-rate.vue"));};var _default =
-
-
-
-
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var naviTitle = function naviTitle() {return __webpack_require__.e(/*! import() | components/navi-title */ "components/navi-title").then(__webpack_require__.bind(null, /*! @/components/navi-title.vue */ "../../../../../../Users/zhu/Desktop/ehealth/bbcare/components/navi-title.vue"));};var angleItem = function angleItem() {return __webpack_require__.e(/*! import() | pages/search/components/angle-item */ "pages/search/components/angle-item").then(__webpack_require__.bind(null, /*! ./components/angle-item.vue */ "../../../../../../Users/zhu/Desktop/ehealth/bbcare/pages/search/components/angle-item.vue"));};var uniRate = function uniRate() {return __webpack_require__.e(/*! import() | components/uni-rate/uni-rate */ "components/uni-rate/uni-rate").then(__webpack_require__.bind(null, /*! @/components/uni-rate/uni-rate.vue */ "../../../../../../Users/zhu/Desktop/ehealth/bbcare/components/uni-rate/uni-rate.vue"));};var _default =
 
 
 
@@ -200,57 +195,19 @@ __webpack_require__.r(__webpack_exports__);
 {
   data: function data() {
     return {
-      indicator_custom_set_3: {
-        indicator_view: 'bottom:0;left:50%;padding:1px;display:flex;flex-direction:row;transform:translateX(-50%);',
-        indicator_default_dots: 'height:2px;margin:0 2px;display:flex;flex-direction:row;justify-content: center;align-items: center;',
-        indicator_unselect_dots: 'width:10px;background-color:rgba(0,0,0,.3);',
-        indicator_select_dots: 'width:20px;background-color:rgba(0,0,0,.7);' },
-
-      height_2: '120upx',
-      height_3: '223upx',
-      swiperItems_3: [{ //元素级 该数据有多少长度则swiper-item有多少项（就是有几页）
-        itemArray: [{
-          type: 'image', //image类型
-          css: 'left:0;top:0;bottom:0;width:100%',
-          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
-        }] },
-      {
-        itemArray: [{
-          type: 'image',
-          css: 'left:0;top:0;bottom:5%;width:100%',
-          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
-        }] },
-      {
-        bgColor: '#FFFFFF',
-        itemArray: [{
-          type: 'image',
-          css: 'left:0;top:0;bottom:0;width:100%',
-          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
-        }] }],
-
-      swiperItems_2: [{ //元素级 该数据有多少长度则swiper-item有多少项（就是有几页）
-        itemArray: [{
-          type: 'image', //image类型
-          css: 'left:0;top:0;bottom:0;width:60%',
-          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
-        }] },
-      {
-        itemArray: [{
-          type: 'image',
-          css: 'left:0;top:0;bottom:5%;width:60%',
-          value: '../../static/search/angel_banner@2x.png' //该项的value， 图片类型为图片路径
-        }] },
-      {
-        bgColor: '#FFFFFF',
-        itemArray: [{
-          type: 'image',
-          css: 'left:0;top:0;bottom:0;width:60%',
-          value: 'http://qnimage.xiteng.com/angel_banner@2x.png' //该项的value， 图片类型为图片路径
-        }] }] };
+      current: 0,
+      mode: 'long',
+      data: [],
+      max: 0,
+      imgs: ['../../static/search/angel_banner@2x.png', '../../static/search/angel_banner@2x.png',
+      '../../static/search/angel_banner@2x.png'] };
 
 
   },
   methods: {
+    change: function change(e) {
+      this.current = e.detail.current;
+    },
     swiperClick: function swiperClick(e) {
       uni.showToast({
         title: '点击了' + e });
@@ -259,8 +216,8 @@ __webpack_require__.r(__webpack_exports__);
 
   components: {
     naviTitle: naviTitle,
-    QSwiper: QSwiper,
-    uniRate: uniRate } };exports.default = _default;
+    uniRate: uniRate,
+    angleItem: angleItem } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),
