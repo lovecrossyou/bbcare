@@ -44,8 +44,7 @@
 	height: 280rpx;
 	width: 670rpx;
 	text-align: center;
-	-webkit-border-radius: 8rpx;
-	        border-radius: 8rpx;
+	border-radius: 8rpx;
 }
 .swiper-tall {
 	display: -webkit-box;
@@ -109,7 +108,6 @@
 	font-family: PingFang-SC-Medium;
 	font-weight: 500;
 	color: rgba(153, 153, 153, 1);
-	text-align: center;
 }
 .angle-item {
 	display: -webkit-box;

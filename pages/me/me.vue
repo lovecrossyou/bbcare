@@ -16,6 +16,15 @@
 					</view>
 				</view>
 				<view class="a_item xiaoxin">
+					<image class="rank-logo" src="../../static/me/wo_top_bk.png" mode=""></image>
+					<view class="rank-logo">
+						<view class="rank">
+							排名
+						</view>
+						<view class="rank-score">
+							23
+						</view>
+					</view>
 					<view class="a_item_text">
 						孝心值：
 					</view>
@@ -25,7 +34,7 @@
 				</view>
 			</view>
 
-			<view class="order-item">
+			<view class="order-item" @click="goOrder">
 				<view class="item-title">
 					天使订单
 				</view>
@@ -133,7 +142,7 @@
 				</view>
 			</view>
 			
-			<view class="baobei-item">
+			<view class="baobei-item" @click="goPersonInfo">
 				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
 				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
 				<view class="baobei-info">
@@ -153,7 +162,7 @@
 				</view>
 			</view>
 			
-			<view class="baobei-item">
+			<view class="baobei-item"  @click="goPersonInfo">
 				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
 				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
 				<view class="baobei-info">
@@ -185,7 +194,16 @@
 			}
 		},
 		methods: {
-
+			goPersonInfo(){
+				uni.navigateTo({
+					url:"/pages/person-info/person-info"
+				})
+			},
+			goOrder(){
+				uni.navigateTo({
+					url:"/pages/order-list/order-list"
+				})
+			}
 		}
 	}
 </script>
@@ -293,12 +311,12 @@
 	}
 
 	.order-status-title {
-		font-size: 26upx;
+		font-size: 25upx;
 		color: #666;
 	}
 
 	.item-title {
-		width: 142upx;
+		/* width: 142upx; */
 		height: 35upx;
 		font-size: 36upx;
 		color: #242A38;
@@ -312,6 +330,32 @@
 	.a_item_text {
 		color: #F6931D;
 		font-size: 32upx;
+	}
+	
+	.xiaoxin{
+		position: relative;
+	}
+	
+	.rank{
+		font-size: 22upx;
+		color: #FFFFFF;
+		width: 66upx;
+		text-align: center;
+	}
+	
+	.rank-score{
+		font-size: 22upx;
+		color: #FFFFFF;
+		width: 66upx;
+		text-align: center;
+	}
+	
+	.rank-logo{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 66upx;
+		height: 73upx;
 	}
 
 	.item-arrow {
@@ -368,5 +412,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		padding: 0 30upx;
+		box-sizing: border-box;
 	}
 </style>

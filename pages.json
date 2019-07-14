@@ -45,6 +45,29 @@
 				"navigationBarTitleText":"李博天使"
 			}
         }
+        ,{
+            "path" : "pages/person-info/person-info",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent" //透明渐变导航栏
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/order-list/order-list",
+            "style" : {
+				"navigationBarTitleText":"我的订单"
+			}
+        }
+        ,{
+            "path" : "pages/angle-list/angle-list",
+            "style" : {
+				"navigationBarTitleText":"救助天使"
+			}
+        }
     ],
 	"tabBar": {
 		"color": "#999999",
@@ -52,15 +75,9 @@
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"text": "首页",
+				"text": "守护宝贝",
 				"iconPath": "static/tab/tab_home.png",
 				"selectedIconPath": "static/tab/tab_home_s.png"
-			},
-			{
-				"pagePath": "pages/care/care",
-				"text": "守护宝贝",
-				"iconPath": "static/tab/tab_dynamic.png",
-				"selectedIconPath": "static/tab/tab_dynamic_s.png"
 			},
 			{
 				"pagePath": "pages/search/search",

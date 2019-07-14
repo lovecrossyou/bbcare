@@ -4,7 +4,10 @@
     "pages/search/search",
     "pages/me/me",
     "pages/care/care",
-    "pages/angle-info/angle-info"
+    "pages/angle-info/angle-info",
+    "pages/person-info/person-info",
+    "pages/order-list/order-list",
+    "pages/angle-list/angle-list"
   ],
   "subPackages": [],
   "window": {
@@ -20,15 +23,9 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
+        "text": "守护宝贝",
         "iconPath": "static/tab/tab_home.png",
         "selectedIconPath": "static/tab/tab_home_s.png"
-      },
-      {
-        "pagePath": "pages/care/care",
-        "text": "守护宝贝",
-        "iconPath": "static/tab/tab_dynamic.png",
-        "selectedIconPath": "static/tab/tab_dynamic_s.png"
       },
       {
         "pagePath": "pages/search/search",
@@ -44,6 +41,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap20.json"
+  "usingComponents": {}
 }

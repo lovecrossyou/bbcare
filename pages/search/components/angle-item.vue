@@ -1,5 +1,5 @@
 <template>
-	<view class="swiper-item-angle">
+	<view class="swiper-item-angle" @click="goAngleInfo">
 		<image :src="icon" mode="aspectFit" class="swiper-item-icon"></image>
 		<view class="desc">
 			心肺功能专家
@@ -22,6 +22,13 @@
 		},
 		data(){
 			return {}
+		},
+		methods: {
+			goAngleInfo() {
+				uni.navigateTo({
+					url:"/pages/angle-info/angle-info"
+				})
+			}
 		},
 		computed:{
 			icon(){
@@ -48,7 +55,6 @@
 	.swiper-item-icon {
 		width: 388upx;
 		height: 280upx;
-		background: #007AFF;
 	}
 
 	.desc {
@@ -62,7 +68,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
+		/* align-items: center; */
 		padding:  24upx 10upx 0 10upx;
 		box-sizing: border-box;
 	}

@@ -1,6 +1,6 @@
 <template>
 	<view class="main">
-		<view class="title-wrapper">
+		<view class="title-wrapper" @click="goAngleList">
 			<naviTitle title="寻找天使">
 				<image src="../../static/search/angle_sousuo.png" class="search"></image>
 			</naviTitle>
@@ -14,7 +14,7 @@
 		</swiper>
 
 		<!-- 救助天使 -->
-		<view class="title-wrapper">
+		<view class="title-wrapper" @click="goAngleList">
 			<naviTitle title="救助天使 ">
 				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
 				<view slot="desc">
@@ -37,7 +37,7 @@
 		</scroll-view>
 
 		<!-- 维修天使 -->
-		<view class="title-wrapper">
+		<view class="title-wrapper" @click="goAngleList">
 			<naviTitle title="维修天使 ">
 				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
 				<view slot="desc">
@@ -60,7 +60,7 @@
 		</scroll-view>
 
 		<!-- 设备天使 -->
-		<view class="title-wrapper">
+		<view class="title-wrapper" @click="goAngleList">
 			<naviTitle title="设备天使 ">
 				<image src="../../static/search/angle_gengduo.png" class="arrow-right"></image>
 				<view slot="desc">
@@ -111,6 +111,11 @@
 			swiperClick(e) {
 				uni.showToast({
 					title: '点击了' + e
+				})
+			},
+			goAngleList(){
+				uni.navigateTo({
+					url:"/pages/angle-list/angle-list"
 				})
 			}
 		},
@@ -205,7 +210,6 @@
 		font-family: PingFang-SC-Medium;
 		font-weight: 500;
 		color: rgba(153, 153, 153, 1);
-		text-align: center;
 	}
 
 	.angle-item {

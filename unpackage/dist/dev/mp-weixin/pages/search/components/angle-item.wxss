@@ -17,7 +17,6 @@
 .swiper-item-icon {
 	width: 388rpx;
 	height: 280rpx;
-	background: #007AFF;
 }
 .desc {
 	font-size: 26rpx;
@@ -40,10 +39,7 @@
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	/* align-items: center; */
 	padding:  24rpx 10rpx 0 10rpx;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
