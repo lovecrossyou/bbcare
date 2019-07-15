@@ -1,1 +1,0 @@
-<view class="main"><view class="navi-wrapper"><view class="title">{{''+title+''}}</view><slot></slot></view><view><block wx:if="{{$slots.desc}}"><slot name="desc"></slot></block><block wx:else><view class="desc"></view></block></view></view>
