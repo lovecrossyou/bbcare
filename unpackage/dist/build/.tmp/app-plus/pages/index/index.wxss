@@ -6,8 +6,7 @@
 	left: 30rpx;
 	height: 126rpx;
 	background-color: #FFFFFF;
-	-webkit-border-radius: 83rpx;
-	        border-radius: 83rpx;
+	border-radius: 83rpx;
 	
 	display: -webkit-box;
 	
@@ -67,8 +66,7 @@
 .expert-icon{
 	width: 143rpx;
 	height: 143rpx;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	position: fixed;
 	left: 30rpx;
 }
@@ -94,8 +92,7 @@
 	background: rgba(255, 255, 255, 1);
 	-webkit-box-shadow: 0rpx 6rpx 18rpx 0rpx rgba(211, 211, 211, 0.1);
 	        box-shadow: 0rpx 6rpx 18rpx 0rpx rgba(211, 211, 211, 0.1);
-	-webkit-border-radius: 20rpx;
-	        border-radius: 20rpx;
+	border-radius: 20rpx;
 
 
 	display: -webkit-box;
@@ -125,8 +122,7 @@
 	border: 3rpx solid rgba(255, 255, 255, 1);
 	-webkit-box-shadow: 0rpx 10rpx 13rpx 0rpx rgba(185, 70, 59, 0.12);
 	        box-shadow: 0rpx 10rpx 13rpx 0rpx rgba(185, 70, 59, 0.12);
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	
 	display: -webkit-box;
 	
@@ -154,8 +150,7 @@
 	height: 102rpx;
 	margin-bottom: 6rpx;
 	background-color: #333333;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 .footer_item_icon_circle_last {
 	width: 44rpx;

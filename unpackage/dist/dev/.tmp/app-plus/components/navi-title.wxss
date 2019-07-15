@@ -1,0 +1,37 @@
+
+.main{
+	/* display: flex;
+	flex-direction: column;
+	height: 80upx;
+	background: #F6931D; */
+}
+.title {
+	font-size: 36rpx;
+	color: #242A38;
+	font-weight: bold;
+}
+.desc{
+	font-size: 28rpx;
+	color: #999999;
+}
+.navi-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	height: 36rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+

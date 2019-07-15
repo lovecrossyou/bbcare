@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "titleNView": {
+    "type": "transparent"
+  },
+  "usingComponents": {
+    "decorate-title": "/components/decorate-title"
+  }
+}

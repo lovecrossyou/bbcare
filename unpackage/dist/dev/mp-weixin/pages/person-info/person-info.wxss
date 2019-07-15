@@ -1,0 +1,123 @@
+
+.header {
+	/* position: relative; */
+}
+.headerbg {
+	width: 100%;
+	height: 452rpx;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.judge-item {
+	font-size: 26rpx;
+	color: #666;
+}
+.judge-wrapper {
+	margin-top: 625rpx;
+	padding: 0 40rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.history-wrapper {
+	margin-top: 70rpx;
+	padding: 0 40rpx 40rpx 40rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.judge-list {
+	margin-top: 32rpx;
+}
+.order-status-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 120rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 0 40rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-top: 50rpx;
+}
+.logo {
+	position: absolute;
+	left: 40rpx;
+	top: 152rpx;
+	width: 172rpx;
+	height: 172rpx;
+	border-radius: 50%;
+	/* background: #007AFF; */
+}
+.order-status-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 102rpx;
+}
+.order-status-icon {
+	width: 48rpx;
+	height: 48rpx;
+	margin-bottom: 20rpx;
+}
+.order-status-title {
+	font-size: 25rpx;
+	color: #666;
+}
+.order-status-score {
+	font-size: 32rpx;
+	color: #666;
+}
+.panel {
+	width: 694rpx;
+	height: 221rpx;
+	background: rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0rpx 15rpx 40rpx 0rpx rgba(237, 175, 77, 0.14);
+	        box-shadow: 0rpx 15rpx 40rpx 0rpx rgba(237, 175, 77, 0.14);
+	border-radius: 12rpx;
+
+	position: absolute;
+	top: 368rpx;
+	left: 28rpx;
+}
+.name {
+	position: absolute;
+	left: 247rpx;
+	top: 186rpx;
+
+	font-size: 40rpx;
+	color: #242A38;
+	font-weight: bold;
+}
+.desc {
+	position: absolute;
+	left: 247rpx;
+	top: 252rpx;
+
+	font-size: 28rpx;
+	color: #6E4E1B;
+}
+
