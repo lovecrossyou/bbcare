@@ -1,8 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "navi-title": "/components/navi-title",
-    "uni-rate": "/components/uni-rate/uni-rate",
-    "angle-item": "/pages/search/components/angle-item"
-  }
-}
