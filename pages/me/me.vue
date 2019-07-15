@@ -79,109 +79,111 @@
 					+ 添加
 				</view>
 			</view>
-		
-		
-		<view class="baobei-list">
-			<view class="baobei-item">
-				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
-				<view class="baobei-info">
-					<view class="baobei-user">
-						<view class="baobei-name">
-							帅老爸
+
+
+			<view class="baobei-list">
+				<view class="baobei-item" @click="goPersonInfo">
+
+					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+					<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+					<view class="baobei-info">
+						<view class="baobei-user">
+							<view class="baobei-name">
+								帅老爸
+							</view>
+							<view class="baobei-desc">
+								最近血压有点高，要吃药
+							</view>
 						</view>
-						<view class="baobei-desc">
-							最近血压有点高，要吃药
+						<view class="addr-wrapper">
+							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+							<view class="addr">北京市西城区百万庄大街11号</view>
 						</view>
+
 					</view>
-					<view class="addr-wrapper">
-						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-						<view class="addr">北京市西城区百万庄大街11号</view>
+				</view>
+
+				<view class="baobei-item" @click="goPersonInfo">
+
+					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+					<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+					<view class="baobei-info">
+						<view class="baobei-user">
+							<view class="baobei-name">
+								帅老爸
+							</view>
+							<view class="baobei-desc">
+								最近血压有点高，要吃药
+							</view>
+						</view>
+						<view class="addr-wrapper">
+							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+							<view class="addr">北京市西城区百万庄大街11号</view>
+						</view>
+
 					</view>
-					
+				</view>
+
+				<view class="baobei-item" @click="goPersonInfo">
+					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+					<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+					<view class="baobei-info">
+						<view class="baobei-user">
+							<view class="baobei-name">
+								帅老爸
+							</view>
+							<view class="baobei-desc">
+								最近血压有点高，要吃药
+							</view>
+						</view>
+						<view class="addr-wrapper">
+							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+							<view class="addr">北京市西城区百万庄大街11号</view>
+						</view>
+
+					</view>
+				</view>
+
+				<view class="baobei-item" @click="goPersonInfo">
+					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+					<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+					<view class="baobei-info">
+						<view class="baobei-user">
+							<view class="baobei-name">
+								帅老爸
+							</view>
+							<view class="baobei-desc">
+								最近血压有点高，要吃药
+							</view>
+						</view>
+						<view class="addr-wrapper">
+							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+							<view class="addr">北京市西城区百万庄大街11号</view>
+						</view>
+
+					</view>
+				</view>
+
+				<view class="baobei-item" @click="goPersonInfo">
+					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+					<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
+					<view class="baobei-info">
+						<view class="baobei-user">
+							<view class="baobei-name">
+								帅老爸
+							</view>
+							<view class="baobei-desc">
+								最近血压有点高，要吃药
+							</view>
+						</view>
+						<view class="addr-wrapper">
+							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+							<view class="addr">北京市西城区百万庄大街11号</view>
+						</view>
+
+					</view>
 				</view>
 			</view>
-			
-			<view class="baobei-item">
-				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
-				<view class="baobei-info">
-					<view class="baobei-user">
-						<view class="baobei-name">
-							帅老爸
-						</view>
-						<view class="baobei-desc">
-							最近血压有点高，要吃药
-						</view>
-					</view>
-					<view class="addr-wrapper">
-						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-						<view class="addr">北京市西城区百万庄大街11号</view>
-					</view>
-					
-				</view>
-			</view>
-			
-			<view class="baobei-item">
-				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
-				<view class="baobei-info">
-					<view class="baobei-user">
-						<view class="baobei-name">
-							帅老爸
-						</view>
-						<view class="baobei-desc">
-							最近血压有点高，要吃药
-						</view>
-					</view>
-					<view class="addr-wrapper">
-						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-						<view class="addr">北京市西城区百万庄大街11号</view>
-					</view>
-					
-				</view>
-			</view>
-			
-			<view class="baobei-item" @click="goPersonInfo">
-				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
-				<view class="baobei-info">
-					<view class="baobei-user">
-						<view class="baobei-name">
-							帅老爸
-						</view>
-						<view class="baobei-desc">
-							最近血压有点高，要吃药
-						</view>
-					</view>
-					<view class="addr-wrapper">
-						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-						<view class="addr">北京市西城区百万庄大街11号</view>
-					</view>
-					
-				</view>
-			</view>
-			
-			<view class="baobei-item"  @click="goPersonInfo">
-				<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-				<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
-				<view class="baobei-info">
-					<view class="baobei-user">
-						<view class="baobei-name">
-							帅老爸
-						</view>
-						<view class="baobei-desc">
-							最近血压有点高，要吃药
-						</view>
-					</view>
-					<view class="addr-wrapper">
-						<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-						<view class="addr">北京市西城区百万庄大街11号</view>
-					</view>
-					
-				</view>
-			</view>
-		</view>
 		</view>
 	</view>
 </template>
@@ -194,14 +196,14 @@
 			}
 		},
 		methods: {
-			goPersonInfo(){
+			goPersonInfo() {
 				uni.navigateTo({
-					url:"/pages/person-info/person-info"
+					url: "/pages/person-info/person-info"
 				})
 			},
-			goOrder(){
+			goOrder() {
 				uni.navigateTo({
-					url:"/pages/order-list/order-list"
+					url: "/pages/order-list/order-list"
 				})
 			}
 		}
@@ -212,64 +214,65 @@
 	.main {
 		width: 100%;
 	}
-	
-	.addr-wrapper{
+
+	.addr-wrapper {
 		display: flex;
 		flex-direction: row;
 		height: 40upx;
 		align-items: center;
 	}
-	
-	.baobei-name{
+
+	.baobei-name {
 		font-size: 32upx;
 		color: #060606;
 	}
-	.baobei-item{
+
+	.baobei-item {
 		display: flex;
 		flex-direction: row;
 		height: 180upx;
 		position: relative;
 		margin-bottom: 90upx;
 	}
-	
-	.addr-icon{
+
+	.addr-icon {
 		width: 18upx;
 		height: 22upx;
 		margin-right: 9upx;
 	}
-	
-	.baobei-desc{
+
+	.baobei-desc {
 		font-size: 24upx;
 		color: #666666;
 	}
-	
-	.edit{
+
+	.edit {
 		width: 34upx;
 		height: 34upx;
 		position: absolute;
 		right: 33upx;
 		top: 0upx;
 	}
-	
-	.addr{
+
+	.addr {
 		font-size: 24upx;
 		color: #666666;
-		
+
 	}
-	
-	.baobei-info{
+
+	.baobei-info {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		margin-left: 20upx;
 	}
-	
-	.baobei-list{
+
+	.baobei-list {
 		padding: 40upx;
 		box-sizing: border-box;
 	}
-	
-	.baobei-icon{
+
+	.baobei-icon {
 		width: 179upx;
 		height: 179upx;
 	}
@@ -279,7 +282,7 @@
 		height: 56upx;
 		background: linear-gradient(97deg, rgba(246, 147, 29, 1) 0%, rgba(246, 111, 29, 1) 100%);
 		border-radius: 28upx;
-		
+
 		color: #FFFFFF;
 		font-size: 28upx;
 		text-align: center;
@@ -331,26 +334,26 @@
 		color: #F6931D;
 		font-size: 32upx;
 	}
-	
-	.xiaoxin{
+
+	.xiaoxin {
 		position: relative;
 	}
-	
-	.rank{
+
+	.rank {
 		font-size: 22upx;
 		color: #FFFFFF;
 		width: 66upx;
 		text-align: center;
 	}
-	
-	.rank-score{
+
+	.rank-score {
 		font-size: 22upx;
 		color: #FFFFFF;
 		width: 66upx;
 		text-align: center;
 	}
-	
-	.rank-logo{
+
+	.rank-logo {
 		position: absolute;
 		right: 0;
 		top: 0;
