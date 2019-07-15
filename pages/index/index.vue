@@ -6,7 +6,7 @@
 				</map>
 			</view>
 
-			<view class="panel">
+			<view class="panel" @click="goPersonInfo">
 				<view class="footer_item" @click="goHistory">
 					<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562844508509&di=cd6010ad4a43b221fc95f1b7c36686d7&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fff9ef93d75d4cfddf085ab67957e623230d5ce8666f3e-BrCfhJ_fw658"
 					 class="footer_item_icon_circle">
@@ -108,7 +108,12 @@
 				uni.navigateTo({
 					url: "/pages/angle-info/angle-info"
 				})
-			}
+			},
+			goPersonInfo() {
+				uni.navigateTo({
+					url: "/pages/person-info/person-info"
+				})
+			},
 		},
 		components: {
 			uniRate
@@ -180,7 +185,7 @@
 		width: 690upx;
 		height: 178upx;
 		position: fixed;
-		top: 80upx;
+		top: 60upx;
 		left: 30upx;
 		background: rgba(255, 255, 255, 1);
 		box-shadow: 0upx 6upx 18upx 0upx rgba(211, 211, 211, 0.1);
