@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "李博天使",
+  "usingComponents": {
+    "uni-rate": "/components/uni-rate/uni-rate",
+    "decorate-title": "/components/decorate-title"
+  }
+}
