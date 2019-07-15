@@ -1,1 +1,0 @@
-<view class="main"><view class="list"><angle-item vue-id="1" bind:__l="__l"></angle-item><angle-item vue-id="2" bind:__l="__l"></angle-item><angle-item vue-id="3" bind:__l="__l"></angle-item><angle-item vue-id="4" bind:__l="__l"></angle-item><angle-item vue-id="5" bind:__l="__l"></angle-item><angle-item vue-id="6" bind:__l="__l"></angle-item></view></view>
