@@ -43,7 +43,7 @@
 
 
 			<view class="map-wrapper">
-				<map style="width: 100%; height: 200px;" :latitude="latitude" :longitude="longitude" :markers="covers">
+				<map style="width: 100%; height: 774rpx;" :latitude="latitude" :longitude="longitude" :markers="covers">
 				</map>
 			</view>
 
@@ -121,7 +121,7 @@
 <style>
 	page {
 		height: 100%;
-		background-color: #E1E1E1;
+		background-color: #fff;
 	}
 
 	.map-wrapper {
