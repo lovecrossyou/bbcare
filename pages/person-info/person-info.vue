@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="main">
 		<view class="header">
 			<image src="../../static/person/shushu_top_bk@2x.png" class="headerbg" />
 			<image class="logo" src="../../static/me/wo_renwu@2x.png"></image>
@@ -53,12 +53,37 @@
 		<view class="judge-wrapper">
 			<!-- 基本信息 -->
 			<decorateTitle title="基本信息"></decorateTitle>
-			<view class="">
-				
+			<view class="base-info-wrapper">
+				<view class="base-info-item">
+					<image class="birth-icon" src="../../static/person/shushu_icon_4@2x.png" mode=""></image>
+					<view class="base-info-text">
+						年龄：76
+					</view>
+				</view>
+				<view class="base-info-item">
+					<image class="height-icon" src="../../static/person/shushu_icon_5@2x.png" mode=""></image>
+					<view class="base-info-text">
+						身高：180cm
+					</view>
+				</view>
+
+				<view class="base-info-item">
+					<image class="weight-icon" src="../../static/person/shushu_icon_6@2x.png" mode=""></image>
+					<view class="base-info-text">
+						体重：78kg
+					</view>
+				</view>
+
+				<view class="base-info-item">
+					<image class="addr-icon" src="../../static/person/shushu_icon_7@2x.png" mode=""></image>
+					<view class="base-info-text">
+						地址：沈阳鞍山铁西区繁荣铁道3号楼304
+					</view>
+				</view>
 			</view>
-			
-			
-			
+
+
+
 
 			<decorateTitle title="病例"></decorateTitle>
 			<view class="judge-list">
@@ -72,6 +97,27 @@
 					3. 青霉素过敏
 				</view>
 			</view>
+
+			<decorateTitle title="定时祝福"></decorateTitle>
+			<view class="textarea">
+				<textarea placeholder-style="color:#666666;font-size:26rpx;" placeholder="叔叔身体怎么样了，昨天太忙了，注意身体健康。" />
+				</view>
+			
+			<!-- 发送 -->
+			<view class="btn-wrapper">
+				<view class="base-info-item">
+					<image class="clock-icon" src="../../static/person/shushu_icon_8@2x.png" mode=""></image>
+					<view class="base-info-text">
+						发送时间 9:21:32
+					</view>
+				</view>
+				<view class="btn-send">发送</view>
+			</view>
+		
+		     <!-- 一键急救 -->
+			 <view class="jijiu">
+			 	一键急救
+			 </view>
 		</view>
 	</view>
 </template>
@@ -95,8 +141,67 @@
 </script>
 
 <style>
-	.header {
+	.main {
 		/* position: relative; */
+		
+		padding-bottom: 180upx;
+		box-sizing: border-box;
+	}
+	
+	
+	.jijiu{
+		position: fixed;
+		bottom: 50upx;
+		left: 115upx;
+		right: 115upx;
+		height: 102upx;
+		background: #F6931D;
+		border-radius: 50upx;
+		line-height: 102upx;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 36upx;
+	}
+	
+	.btn-wrapper{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 30upx;
+		align-items: center;
+	}
+	
+	.btn-send{
+		width:180upx;
+		height:68upx;
+		background:rgba(255,215,152,1);
+		border-radius:10upx;
+		line-height: 68upx;
+		text-align: center;
+		color: #242A38;
+		font-size: 28upx;
+		
+	}
+	
+	.textarea{
+		margin-top: 40rpx;
+		width:694upx;
+		height:196upx;
+		background:rgba(255,255,255,1);
+		border:1upx solid rgba(221, 221, 221, 1);
+		border-radius:10upx;	
+	}
+	textarea{
+		padding: 20rpx;
+		box-sizing: border-box;
+		font-size: 26rpx;
+	}
+	
+	.clock-icon{
+		width: 26rpx;
+		height: 26rpx;
+		margin-right: 12upx;
 	}
 
 	.headerbg {
@@ -115,8 +220,51 @@
 
 	.judge-wrapper {
 		margin-top: 625upx;
+		margin-bottom: 70upx;
 		padding: 0 40upx;
 		box-sizing: border-box;
+	}
+	
+	.base-info-wrapper{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 15rpx 20rpx;
+		box-sizing: border-box;
+	}
+	
+	.base-info-item{
+		display: flex;
+		flex-direction: row;
+		margin-right: 40rpx;
+		height: 60rpx;
+		align-items: center;
+	}
+	
+	.birth-icon{
+		width: 34rpx;
+		height: 25rpx;
+	}
+	
+	.base-info-text{
+		font-size: 26rpx;
+		color: #666666;
+		margin-left: 2rpx;
+	}
+	
+	.height-icon{
+		width: 33rpx;
+		height: 33rpx;
+	}
+	
+	.addr-icon{
+		width: 24rpx;
+		height: 24rpx;
+	}
+	
+	.weight-icon{
+		width: 34rpx;
+		height: 27rpx;
 	}
 
 	.history-wrapper {
@@ -127,6 +275,7 @@
 
 	.judge-list {
 		margin-top: 32upx;
+		margin-bottom: 70upx;
 	}
 
 	.order-status-wrapper {
