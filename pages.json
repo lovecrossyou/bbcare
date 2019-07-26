@@ -67,6 +67,10 @@
 				"navigationBarTitleText":"救助天使"
 			}
         }
+        ,{
+            "path" : "pages/confirm-order/confirm-order",
+            "style" : {}
+        }
     ],
 	"tabBar": {
 		"color": "#999999",
