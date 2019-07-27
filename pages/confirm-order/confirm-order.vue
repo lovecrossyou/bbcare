@@ -77,7 +77,7 @@
 		},
 		methods: {
 			goNext(){
-				uni.navigateTo({
+				uni.redirectTo({
 					url:"/pages/pay-order-info/pay-order-info"
 				});
 				
