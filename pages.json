@@ -14,6 +14,7 @@
             "path" : "pages/search/search",
             "style" : {
 				"navigationStyle": "custom",
+				"navigationBarTitleText":"寻找天使",
 				"app-plus": {
 					"titleNView": {
 						"type": "transparent" //透明渐变导航栏
@@ -25,6 +26,7 @@
             "path" : "pages/me/me",
             "style" : {
 				"navigationStyle": "custom",
+				"navigationBarTitleText":"我",
 				"app-plus": {
 					"titleNView": {
 						"type": "transparent" //透明渐变导航栏
@@ -48,6 +50,7 @@
             "path" : "pages/person-info/person-info",
             "style" : {
 				"navigationStyle": "custom",
+				"navigationBarTitleText":"天使信息",
 				"app-plus": {
 					"titleNView": {
 						"type": "transparent" //透明渐变导航栏
