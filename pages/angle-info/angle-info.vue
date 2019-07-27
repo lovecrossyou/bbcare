@@ -69,7 +69,7 @@
 						助，当时后果真的不堪设想，真是太伟大了
 					</view>
 				</view>
-				
+
 				<view class="history-item">
 					<view class="user-info">
 						<image src="../../static/me/wo_renwu@2x.png" mode=""></image>
@@ -85,6 +85,10 @@
 			</view>
 		</view>
 
+
+		<view class="footer" @click="goOrder">
+			一键下单
+		</view>
 	</view>
 </template>
 
@@ -98,7 +102,11 @@
 			}
 		},
 		methods: {
-
+			goOrder(){
+				uni.navigateTo({
+					url:"/pages/confirm-order/confirm-order"
+				})
+			}
 		},
 		components: {
 			uniRate,
@@ -172,6 +180,20 @@
 		margin-top: 70upx;
 		padding: 0 40upx 40upx 40upx;
 		box-sizing: border-box;
+	}
+
+	.footer {
+		width: 520upx;
+		height: 102upx;
+		background: rgba(246, 147, 29, 1);
+		border-radius: 51upx;
+		/* position: fixed; */
+		margin-bottom: 50upx;
+		margin-left: 115upx;
+		color: #FFFFFF;
+		font-size: 36upx;
+		text-align: center;
+		line-height: 102upx;
 	}
 
 	.judge-list {

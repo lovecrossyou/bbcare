@@ -6,7 +6,7 @@
 			</naviTitle>
 		</view>
 
-		<swiper class="swiper-tall" @change="change" :current="swiperCurrentIndex">
+		<swiper class="swiper-tall" @change="change" >
 			<swiper-item class="swiper-container" v-for="(img, index) in imgs" :key="index" :item-id="img" :data-year="index">
 				<image src="http://qnimage.xiteng.com/angel_banner@2x.png" class="swiper-item">
 				</image>

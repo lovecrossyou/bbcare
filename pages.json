@@ -69,7 +69,32 @@
         }
         ,{
             "path" : "pages/confirm-order/confirm-order",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText":"提交订单"
+			}
+        }
+        ,{
+            "path" : "pages/fix-item/fix-item",
+            "style" : {
+				"navigationBarTitleText":"选择维修项"
+			}
+        }
+        ,{
+            "path" : "pages/fix-item-select/fix-item-select",
+            "style" : {
+				"navigationBarTitleText":"选择维修项"
+			}
+        }
+        ,{
+            "path" : "pages/pay-order-info/pay-order-info",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent" //透明渐变导航栏
+					}
+				}
+			}
         }
     ],
 	"tabBar": {

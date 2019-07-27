@@ -1,5 +1,8 @@
 <template>
 	<view>
+		<view class="bg" />
+		<view class="ordersuc">下单成功</view>
+		<view class="order-desc">正在等待天使接单</view>
 		<view class="user-wrapper">
 			<view class="left">
 				<view class="addr-icon-wrapper">
@@ -26,38 +29,30 @@
 		</view>
 
 		<view class="angle-wrapper">
-			<view class="angle-avatar-wrapper">
-				<image src="http://qnimage.xiteng.com/person001.png" class="angle-avatar">
-				
-				</image>
-				<view class="angle-name">
-					维修天使-李蔼明
-				</view>
-
-				<view class="angle-desc">
-					主要电器维修
-				</view>
-			</view>
+			<view class="item-title">救助信息</view>
 			<view class="item-list">
-				<uni-list-item title="维修种类" @click="goFixItem"></uni-list-item>
-				<uni-list-item title="维修描述"></uni-list-item>
+				<cmd-cell-item title="救助人" addon="叔叔" />
+				<cmd-cell-item title="救助天使" addon="李明博" />
+				<cmd-cell-item title="救助事项" addon="维修" />
+				<cmd-cell-item title="故障描述" addon="空调不制冷" />
 			</view>
-
-
 		</view>
 
-		<view class="pay-wrapper">
-			<uni-list-item title="服务费"></uni-list-item>
-			<uni-list-item title="付款方式"></uni-list-item>
-			<uni-list-item title="优惠券" note="无可用代金券"></uni-list-item>
+		<view class="angle-wrapper2">
+			<!-- <view class="item-title">救助信息</view> -->
+			<view class="item-list">
+				<cmd-cell-item title="服务费" addon="¥50" />
+				<cmd-cell-item title="救助天使" addon="无使用优惠券" />
+				<cmd-cell-item title="实付" addon="¥50" />
+			</view>
 		</view>
 
-		<view class="footer">
-			<view class="footer-total">
-				总计：￥50
-			</view>
-			<view class="btn-confirm" @click="goNext">
-				提交订单
+		<view class="angle-wrapper3">
+			<view class="item-title">订单信息</view>
+			<view class="item-list">
+				<cmd-cell-item title="订单号" addon="121321321231231" />
+				<cmd-cell-item title="下单时间" addon="2019-7-11" />
+				<cmd-cell-item title="支付方式" addon="线上支付" />
 			</view>
 		</view>
 	</view>
@@ -66,10 +61,13 @@
 <script>
 	import uniList from '@/components/uni-list/uni-list.vue'
 	import uniListItem from '@/components/uni-list-item/uni-list-item.vue'
+	import cmdCellItem from '@/components/cmd-cell-item/cmd-cell-item.vue'
+
 	export default {
 		components: {
 			uniList,
-			uniListItem
+			uniListItem,
+			cmdCellItem
 		},
 		data() {
 			return {
@@ -77,17 +75,7 @@
 			}
 		},
 		methods: {
-			goNext(){
-				uni.navigateTo({
-					url:"/pages/pay-order-info/pay-order-info"
-				});
-				
-			},
-			goFixItem(){
-				uni.navigateTo({
-					url:"/pages/fix-item-select/fix-item-select"
-				})
-			}
+
 		}
 	}
 </script>
@@ -110,6 +98,30 @@
 
 		padding: 0upx 20upx;
 		box-sizing: border-box;
+	}
+
+	.bg {
+		width: 750upx;
+		height: 800upx;
+		background: linear-gradient(-74deg, rgba(255, 186, 21, 1) 50%, rgba(255, 153, 30, .1) 100%);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	.ordersuc {
+		margin-top: 100upx;
+		margin-left: 40upx;
+		font-size: 60upx;
+		color: #FDFCFC;
+	}
+
+	.order-desc {
+		margin-left: 40upx;
+		font-size: 28upx;
+		color: #FDFCFC;
 	}
 
 	.pay-wrapper {
@@ -136,9 +148,9 @@
 		justify-content: space-between;
 		padding: 0 20upx;
 		box-sizing: border-box;
-		
-		
-		border-top: solid 2upx rgba(238,238,238,1);
+
+
+		border-top: solid 2upx rgba(238, 238, 238, 1);
 	}
 
 	.footer-total {
@@ -173,11 +185,43 @@
 		margin-top: 25upx;
 	}
 
+	.item-title {
+		color: #242A38;
+		font-size: 32upx;
+		font-weight: bold;
+		margin-left: 26upx;
+		margin-top: 20upx;
+	}
+
 	.angle-wrapper {
 		margin-left: 32upx;
 		margin-top: 20upx;
 		width: 686upx;
-		height: 383upx;
+		height: 512upx;
+		background: rgba(255, 255, 255, 1);
+		border: 1upx solid rgba(247, 246, 246, 1);
+		box-shadow: 0upx 6upx 18upx 0upx rgba(95, 95, 95, 0.02);
+		border-radius: 20upx;
+
+	}
+
+	.angle-wrapper2 {
+		margin-left: 32upx;
+		margin-top: 20upx;
+		width: 686upx;
+		height: 295upx;
+		background: rgba(255, 255, 255, 1);
+		border: 1upx solid rgba(247, 246, 246, 1);
+		box-shadow: 0upx 6upx 18upx 0upx rgba(95, 95, 95, 0.02);
+		border-radius: 20upx;
+
+	}
+
+	.angle-wrapper3 {
+		margin-left: 32upx;
+		margin-top: 20upx;
+		width: 686upx;
+		height: 450upx;
 		background: rgba(255, 255, 255, 1);
 		border: 1upx solid rgba(247, 246, 246, 1);
 		box-shadow: 0upx 6upx 18upx 0upx rgba(95, 95, 95, 0.02);
