@@ -43,7 +43,6 @@
 				<uni-list-item title="维修描述"></uni-list-item>
 			</view>
 
-
 		</view>
 
 		<view class="pay-wrapper">

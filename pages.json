@@ -89,6 +89,7 @@
             "path" : "pages/pay-order-info/pay-order-info",
             "style" : {
 				"navigationStyle": "custom",
+				"navigationBarTitleText":"下单",
 				"app-plus": {
 					"titleNView": {
 						"type": "transparent" //透明渐变导航栏
