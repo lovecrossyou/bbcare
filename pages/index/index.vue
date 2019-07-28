@@ -55,15 +55,7 @@
 				title: 'Hello',
 				latitude: 39.909,
 				longitude: 116.39742,
-				covers: [{
-					latitude: 39.909,
-					longitude: 116.39742,
-					iconPath: '../../../static/location.png'
-				}, {
-					latitude: 39.90,
-					longitude: 116.38,
-					iconPath: '../../../static/location.png'
-				}],
+				covers: [],
 				circles:[
 				],
 				positions: [{
