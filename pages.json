@@ -118,6 +118,12 @@
 				"navigationBarTitleText":"注册"
 			}
 		}
+        ,{
+            "path" : "pages/relativescard/relativescard",
+            "style" : {
+				"navigationBarTitleText":"亲属卡"
+			}
+        }
     ],
 	"tabBar": {
 		"color": "#999999",
