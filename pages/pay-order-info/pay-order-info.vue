@@ -112,7 +112,7 @@
 	}
 
 	.ordersuc {
-		margin-top: 100upx;
+		margin-top: 135upx;
 		margin-left: 40upx;
 		font-size: 60upx;
 		color: #FDFCFC;
