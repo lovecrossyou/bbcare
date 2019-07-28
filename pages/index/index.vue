@@ -78,7 +78,7 @@
 					img:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=473036217,3304635291&fm=26&gp=0.jpg',
 					title:'妈妈',
 					latitude: 38.90,
-					longitude: 116.348,
+					longitude: 116.388,
 					color:'#fff',
 					fillColor:"#F6931D",
 					radius:40
@@ -86,7 +86,7 @@
 					img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4088898956,2562357905&fm=26&gp=0.jpg",
 					title:'爷爷',
 					latitude: 39.90,
-					longitude: 114.48,
+					longitude: 116.48,
 					color:'#fff',
 					fillColor:"#F6931D",
 					radius:40
@@ -94,7 +94,7 @@
 					img:"http://qnimage.xiteng.com/download.jpg",
 					title:'奶奶',
 					latitude: 39.90,
-					longitude: 115.388,
+					longitude: 116.378,
 					color:'#fff',
 					fillColor:"#F6931D",
 					radius:40
