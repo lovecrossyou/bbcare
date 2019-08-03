@@ -2,23 +2,22 @@
 	<view class="main">
 		<view class="content">
 			<view class="map-wrapper">
-				<map style="width: 100%; height: 100%;" :circles="circles" :latitude="latitude" :longitude="longitude" :markers="covers">
+				<map style="width: 100%; height: 100%;" :circles="circles" :latitude="latitude" :longitude="longitude" :controls="controls"
+				 :markers="covers">
 				</map>
 			</view>
 
 			<view class="panel">
 				<block v-for="(d,index) in positions" :key="index">
 					<view class="footer_item" @click="goPosition(d,index)">
-						<image :src="d.img"
-						 v-bind:class="selectIndex===index? 'footer_item_icon_circle_active' :''"
-						 class="footer_item_icon_circle">
+						<image :src="d.img" v-bind:class="selectIndex===index? 'footer_item_icon_circle_active' :''" class="footer_item_icon_circle">
 						</image>
 						<view class="footer_item_title">
 							{{d.title}}
 						</view>
 					</view>
 				</block>
-				
+
 				<view class="footer_item_last" @click="goHistory">
 					<image src="/static/index/home_icon_add.png" class="footer_item_icon_circle_last">
 					</image>
@@ -45,64 +44,108 @@
 				</view>
 			</view>
 		</view>
+		<uni-fab :pattern="pattern" :content="content" :horizontal="horizontal" :vertical="vertical" :direction="direction"
+		 @trigger="trigger"></uni-fab>
 	</view>
 </template>
 
 <script>
 	import uniRate from "@/components/uni-rate/uni-rate.vue"
+	import uniPopup from "@/components/uni-popup/uni-popup.vue"
+	import uniFab from '@/components/uni-fab/uni-fab.vue';
 	export default {
 		data() {
 			return {
-				selectIndex:0,
+				horizontal: 'right',
+				vertical: 'bottom',
+				direction: 'horizontal',
+				pattern: {
+					color: '#7A7E83',
+					backgroundColor: '#fff',
+					selectedColor: '#007AFF',
+					buttonColor: "#007AFF"
+				},
+				content: [{
+						iconPath: '/static/index/baojing.png',
+						selectedIconPath: '/static/index/baojing.png',
+						text: '报警',
+						active: false
+					},{
+						iconPath: '/static/index/range.png',
+						selectedIconPath: '/static/index/range.png',
+						text: '设定范围',
+						active: false
+					}
+				],
+				selectIndex: 0,
 				title: 'Hello',
 				latitude: 39.909,
 				longitude: 116.39742,
 				covers: [],
-				circles:[
-				],
+				circles: [],
+				controls: [],
 				positions: [{
-					img:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562844508509&di=cd6010ad4a43b221fc95f1b7c36686d7&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fff9ef93d75d4cfddf085ab67957e623230d5ce8666f3e-BrCfhJ_fw658',
-					title:'爸爸',
+					img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562844508509&di=cd6010ad4a43b221fc95f1b7c36686d7&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fff9ef93d75d4cfddf085ab67957e623230d5ce8666f3e-BrCfhJ_fw658',
+					title: '爸爸',
 					latitude: 39.90,
 					longitude: 116.38,
-					color:'ffffff',
-					fillColor:"F6931D",
-					radius:40
-				},{
-					img:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=473036217,3304635291&fm=26&gp=0.jpg',
-					title:'妈妈',
+					color: 'fff',
+					fillColor: "F6931D",
+					radius: 40
+				}, {
+					img: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=473036217,3304635291&fm=26&gp=0.jpg',
+					title: '妈妈',
 					latitude: 38.90,
 					longitude: 116.388,
-					color:'#fff',
-					fillColor:"#F6931D",
-					radius:40
-				},{
-					img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4088898956,2562357905&fm=26&gp=0.jpg",
-					title:'爷爷',
+					color: '#fff',
+					fillColor: "#F6931D",
+					radius: 40
+				}, {
+					img: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4088898956,2562357905&fm=26&gp=0.jpg",
+					title: '爷爷',
 					latitude: 39.90,
 					longitude: 116.48,
-					color:'#fff',
-					fillColor:"#F6931D",
-					radius:40
-				},{
-					img:"http://qnimage.xiteng.com/download.jpg",
-					title:'奶奶',
+					color: '#fff',
+					fillColor: "#F6931D",
+					radius: 40
+				}, {
+					img: "http://qnimage.xiteng.com/download.jpg",
+					title: '奶奶',
 					latitude: 39.90,
 					longitude: 116.378,
-					color:'#fff',
-					fillColor:"#F6931D",
-					radius:40
+					color: '#fff',
+					fillColor: "#F6931D",
+					radius: 40
 				}]
 			}
 		},
 		onLoad() {
-			const  p = this.positions[this.selectIndex];
+			const p = this.positions[this.selectIndex];
 			this.latitude = p.latitude;
 			this.longitude = p.longitude;
 			this.circles = [p];
 		},
 		methods: {
-			goPosition(p,index) {
+			trigger(e) {
+				console.log(e);
+				if (e.index == 0) {
+					uni.makePhoneCall({
+						phoneNumber: '110'
+					});
+				}
+				else if(e.index ===1){
+					this.goSettingMap();
+				}
+			},
+			controltap() {
+				this.goSettingMap();
+			},
+			goSettingMap(){
+				uni.navigateTo({
+					url:"/pages/mapSetting/mapSetting"
+				})
+			},
+			goPosition(p, index) {
 				this.latitude = p.latitude;
 				this.longitude = p.longitude;
 				this.selectIndex = index;
@@ -135,7 +178,9 @@
 			},
 		},
 		components: {
-			uniRate
+			uniRate,
+			uniPopup,
+			uniFab
 		}
 	}
 </script>
@@ -237,7 +282,7 @@
 		background-color: #333333;
 		border-radius: 50%;
 	}
-	
+
 	.footer_item_icon_circle_active {
 		width: 110upx;
 		height: 110upx;

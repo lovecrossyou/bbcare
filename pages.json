@@ -124,6 +124,12 @@
 				"navigationBarTitleText":"亲属卡"
 			}
         }
+        ,{
+            "path" : "pages/mapSetting/mapSetting",
+            "style" : {
+				"navigationBarTitleText":"设置活动范围"
+			}
+        }
     ],
 	"tabBar": {
 		"color": "#999999",
