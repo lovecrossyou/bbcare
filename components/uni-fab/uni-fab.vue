@@ -232,7 +232,7 @@ export default {
 
 .fab-box.fab.rightBottom {
 	right: 30upx;
-	bottom: 300upx;
+	bottom: 60upx;
 }
 
 .fab-box.fab.rightTop {
