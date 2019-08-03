@@ -38,6 +38,7 @@
 		onLoad() {
 			this.systemInfo();
 			this.initMapContext();
+			this.circles = [this.getCirclePosition()];
 		},
 		methods: {
 			initMapContext() {
@@ -46,7 +47,6 @@
 			sliderChange(e) {
 				this.distance = e.detail.value;
 				this.circles = [this.getCirclePosition()];
-				// console.log('value 发生变化：' + e.detail.value)
 			},
 			goBack() {
 				uni.navigateBack();
@@ -85,7 +85,7 @@
 					color: '#F6931D',
 					fillColor: "#00000000",
 					radius: 80 * this.distance,
-					strokeWidth:.5
+					strokeWidth: .5
 				}
 			},
 			onMapChange(e) {
@@ -93,15 +93,12 @@
 					let that = this;
 					this.mapContext.getCenterLocation({
 						success(res) {
-							console.log('res ##', res);
 							that.latitude = res.latitude;
 							that.longitude = res.longitude;
-							
 							that.circles = [that.getCirclePosition()];
 						}
 					})
 				}
-
 			}
 		}
 	}
