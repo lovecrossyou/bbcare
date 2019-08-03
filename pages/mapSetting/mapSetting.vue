@@ -78,14 +78,12 @@
 			},
 			getCirclePosition() {
 				return {
-					img: "http://qnimage.xiteng.com/download.jpg",
-					title: '奶奶',
 					latitude: this.latitude,
 					longitude: this.longitude,
 					color: '#F6931D',
 					fillColor: "#00000000",
 					radius: 80 * this.distance,
-					strokeWidth: .5
+					strokeWidth: 1
 				}
 			},
 			onMapChange(e) {
