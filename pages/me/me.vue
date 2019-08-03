@@ -75,7 +75,7 @@
 				<view class="item-title">
 					我的宝辈
 				</view>
-				<view class="add-btn">
+				<view class="add-btn" @click="addBB">
 					+ 添加
 				</view>
 			</view>
@@ -196,6 +196,11 @@
 			}
 		},
 		methods: {
+			addBB(){
+				uni.navigateTo({
+					url:"/pages/relativescard/relativescard"
+				});
+			},
 			goPersonInfo() {
 				uni.navigateTo({
 					url: "/pages/person-info/person-info"

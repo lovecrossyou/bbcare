@@ -8,8 +8,9 @@
 
 			<view class="panel">
 				<block v-for="(d,index) in positions" :key="index">
-					<view class="footer_item" @click="goPosition(d)">
+					<view class="footer_item" @click="goPosition(d,index)">
 						<image :src="d.img"
+						 v-bind:class="selectIndex===index? 'footer_item_icon_circle_active' :''"
 						 class="footer_item_icon_circle">
 						</image>
 						<view class="footer_item_title">
@@ -52,6 +53,7 @@
 	export default {
 		data() {
 			return {
+				selectIndex:0,
 				title: 'Hello',
 				latitude: 39.909,
 				longitude: 116.39742,
@@ -94,12 +96,16 @@
 			}
 		},
 		onLoad() {
-
+			const  p = this.positions[this.selectIndex];
+			this.latitude = p.latitude;
+			this.longitude = p.longitude;
+			this.circles = [p];
 		},
 		methods: {
-			goPosition(p) {
+			goPosition(p,index) {
 				this.latitude = p.latitude;
 				this.longitude = p.longitude;
+				this.selectIndex = index;
 				this.circles = [p];
 			},
 			goCare() {
@@ -231,14 +237,19 @@
 		background-color: #333333;
 		border-radius: 50%;
 	}
+	
+	.footer_item_icon_circle_active {
+		width: 110upx;
+		height: 110upx;
+		margin-bottom: 6upx;
+		background-color: #333333;
+		border-radius: 50%;
+		border: solid 8upx #F6931D;
+	}
 
 	.footer_item_icon_circle_last {
 		width: 44upx;
 		height: 44upx;
-		/* background: rgba(109, 162, 203, 0);
-		border: 3upx solid rgba(255, 255, 255, 1);
-		box-shadow: 0upx 10upx 13upx 0upx rgba(185, 70, 59, 0.12);
-		border-radius: 50%; */
 	}
 
 	.footer {
