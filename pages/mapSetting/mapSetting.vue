@@ -8,7 +8,7 @@
 		<view class="content">
 			<view class="uni-title">设置最大活动半径(公里)</view>
 			<view class="slider">
-				<slider max="5" show-value value="3" @change="sliderChange" activeColor="#FFCC33" backgroundColor="#000000"
+				<slider max="5" show-value value="3" @change="sliderChange"
 				 block-color="#8A6DE9"  />
 				<view class="suffix">
 					公里
