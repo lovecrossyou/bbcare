@@ -117,6 +117,7 @@ export default {
 				index,
 				item
 			});
+			this.open();
 		},
 		/**
 		 * 获取 位置信息
