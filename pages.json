@@ -130,6 +130,12 @@
 				"navigationBarTitleText":"设置活动范围"
 			}
         }
+        ,{
+            "path" : "pages/video-monitor/video-monitor",
+            "style" : {
+				"navigationBarTitleText":"视频监控"
+			}
+        }
     ],
 	"tabBar": {
 		"color": "#999999",
