@@ -7,25 +7,42 @@
 				</map>
 			</view>
 
-			<view class="panel">
-				<block v-for="(d,index) in positions" :key="index">
-					<view class="footer_item" @click="goPosition(d,index)">
-						<image :src="d.img" v-bind:class="selectIndex===index? 'footer_item_icon_circle_active' :''" class="footer_item_icon_circle">
+			<view class="panel-wrapper">
+				<view class="panel">
+					<block v-for="(d,index) in positions" :key="index">
+						<view class="footer_item" @click="goPosition(d,index)">
+							<image :src="d.img" v-bind:class="selectIndex===index? 'footer_item_icon_circle_active' :'footer_item_icon_circle'">
+							</image>
+							<view class="footer_item_title">
+								{{d.title}}
+							</view>
+						</view>
+					</block>
+
+					<view class="footer_item_last" @click="goHistory">
+						<image src="/static/index/home_icon_add.png" class="footer_item_icon_circle_last">
 						</image>
 						<view class="footer_item_title">
-							{{d.title}}
+
 						</view>
 					</view>
-				</block>
-
-				<view class="footer_item_last" @click="goHistory">
-					<image src="/static/index/home_icon_add.png" class="footer_item_icon_circle_last">
-					</image>
-					<view class="footer_item_title">
-
-					</view>
 				</view>
+				<uni-collapse >
+					<uni-collapse-item title="设置" thumb="http://qnimage.xiteng.com/setting.png"> 
+						<view class="coll-items">
+							<view class="item" @click="makePhoneCall">
+								<image src="../../static/index/baojing.png" mode=""></image>
+								<view class="coll-title">报警</view>
+							</view>
+							<view class="item" @click="goSettingMap">
+								<image src="../../static/index/range.png" mode=""></image>
+								<view class="coll-title">设定预警范围</view>
+							</view>
+						</view>
+					</uni-collapse-item>
+				</uni-collapse>
 			</view>
+
 
 			<view class="expert">
 				<image class="expert-icon" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2190710599,3341195806&fm=27&gp=0.jpg"
@@ -52,31 +69,18 @@
 <script>
 	import uniRate from "@/components/uni-rate/uni-rate.vue"
 	import uniPopup from "@/components/uni-popup/uni-popup.vue"
-	import uniFab from '@/components/uni-fab/uni-fab.vue';
+	import uniCollapseItem from '@/components/uni-collapse-item/uni-collapse-item.vue';
+	import uniCollapse from '@/components/uni-collapse/uni-collapse.vue';
+
 	export default {
 		data() {
 			return {
-				horizontal: 'right',
-				vertical: 'bottom',
-				direction: 'horizontal',
 				pattern: {
 					color: '#7A7E83',
 					backgroundColor: '#fff',
 					selectedColor: '#007AFF',
 					buttonColor: "#007AFF"
 				},
-				content: [{
-						iconPath: '/static/index/baojing.png',
-						selectedIconPath: '/static/index/baojing.png',
-						text: '报警',
-						active: false
-					},{
-						iconPath: '/static/index/range.png',
-						selectedIconPath: '/static/index/range.png',
-						text: '设定范围',
-						active: false
-					}
-				],
 				selectIndex: 0,
 				title: 'Hello',
 				latitude: 39.909,
@@ -126,23 +130,17 @@
 			this.circles = [p];
 		},
 		methods: {
-			trigger(e) {
-				console.log(e);
-				if (e.index == 0) {
-					uni.makePhoneCall({
-						phoneNumber: '110'
-					});
-				}
-				else if(e.index ===1){
-					this.goSettingMap();
-				}
+			makePhoneCall() {
+				uni.makePhoneCall({
+					phoneNumber: '110'
+				});
 			},
 			controltap() {
 				this.goSettingMap();
 			},
-			goSettingMap(){
+			goSettingMap() {
 				uni.navigateTo({
-					url:"/pages/mapSetting/mapSetting"
+					url: "/pages/mapSetting/mapSetting"
 				})
 			},
 			goPosition(p, index) {
@@ -180,7 +178,8 @@
 		components: {
 			uniRate,
 			uniPopup,
-			uniFab
+			uniCollapse,
+			uniCollapseItem
 		}
 	}
 </script>
@@ -198,6 +197,30 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+	}
+
+	.coll-items {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 15upx;
+		box-sizing: border-box;
+	}
+
+	.item>image {
+		width: 50upx;
+		height: 50upx;
+		margin-bottom: 10upx;
+	}
+
+	.coll-title {
+		font-size: 20upx;
 	}
 
 	.map-wrapper {
@@ -245,11 +268,18 @@
 		margin-left: 160upx;
 	}
 
-	.panel {
-		width: 690upx;
+	.panel-wrapper {
+		width: 100%;
 		height: 178upx;
 		position: fixed;
 		top: 60upx;
+	}
+
+	.panel {
+		width: 690upx;
+		height: 178upx;
+		position: relative;
+		/* top: 60upx; */
 		left: 30upx;
 		background: rgba(255, 255, 255, 1);
 		box-shadow: 0upx 6upx 18upx 0upx rgba(211, 211, 211, 0.1);
@@ -281,6 +311,7 @@
 		margin-bottom: 6upx;
 		background-color: #333333;
 		border-radius: 50%;
+		opacity: .8;
 	}
 
 	.footer_item_icon_circle_active {
@@ -289,7 +320,7 @@
 		margin-bottom: 6upx;
 		background-color: #333333;
 		border-radius: 50%;
-		border: solid 8upx #F6931D;
+		border: solid 4upx #F6931D;
 	}
 
 	.footer_item_icon_circle_last {

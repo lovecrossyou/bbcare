@@ -18,4 +18,7 @@
 		font-size: 28upx;
 		color: #1F1F1F;
 	}
+	.uni-collapse-cell__title-text{
+		font-size: 20upx !important;
+	}
 </style>

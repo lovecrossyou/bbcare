@@ -1,43 +1,38 @@
 <template>
-	<text class="uni-badge" v-if="text" :class="setClass" @click="onClick()">{{text}}</text>
+  <text
+    v-if="text"
+    :class="inverted ? 'uni-badge-' + type + ' uni-badge--' + size + ' uni-badge-inverted' : 'uni-badge-' + type + ' uni-badge--' + size"
+    class="uni-badge"
+    @click="onClick()">{{ text }}</text>
 </template>
 
 <script>
-	export default {
-		name: 'uni-badge',
-		props: {
-			type: {
-				type: String,
-				default: 'default'
-			},
-			inverted: {
-				type: Boolean,
-				default: false
-			},
-			text: {
-				type: String,
-				default: ''
-			},
-			size: { //small.normal
-				type: String,
-				default: 'normal'
-			}
-		},
-		computed: {
-			setClass() {
-				let classList = ['uni-badge-' + this.type, 'uni-badge--' + this.size];
-				if (this.inverted === true) {
-					classList.push('uni-badge-inverted')
-				}
-				return classList.join(" ")
-			}
-		},
-		methods: {
-			onClick() {
-				this.$emit('click')
-			}
-		}
-	}
+export default {
+  name: 'UniBadge',
+  props: {
+    type: {
+      type: String,
+      default: 'default'
+    },
+    inverted: {
+      type: Boolean,
+      default: false
+    },
+    text: {
+      type: String,
+      default: ''
+    },
+    size: { // small.normal
+      type: String,
+      default: 'normal'
+    }
+  },
+  methods: {
+    onClick () {
+      this.$emit('click')
+    }
+  }
+}
 </script>
 
 <style lang="scss">
