@@ -226,7 +226,8 @@
 	.map-wrapper {
 		position: fixed;
 		bottom: 260rpx;
-		top: 260rpx;
+		/* top: 260rpx; */
+		top:460upx;
 		left: 0;
 		right: 0;
 	}
@@ -270,7 +271,8 @@
 
 	.panel-wrapper {
 		width: 100%;
-		height: 178upx;
+		/* height: 178upx; */
+		height: 218upx;
 		position: fixed;
 		top: 60upx;
 	}

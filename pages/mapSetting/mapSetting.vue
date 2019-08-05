@@ -19,6 +19,10 @@
 </template>
 
 <script>
+	const currrentLoc = {
+		latitude: 39.909,
+		longitude: 116.39742,
+	}
 	export default {
 		data() {
 			return {
@@ -41,6 +45,25 @@
 			this.circles = [this.getCirclePosition()];
 		},
 		methods: {
+			getDistance(lat1, lng1, lat2, lng2) {
+				lat1 = lat1 || 0;
+				lng1 = lng1 || 0;
+				lat2 = lat2 || 0;
+				lng2 = lng2 || 0;
+				var rad1 = lat1 * Math.PI / 180.0;
+
+				var rad2 = lat2 * Math.PI / 180.0;
+
+				var a = rad1 - rad2;
+
+				var b = lng1 * Math.PI / 180.0 - lng2 * Math.PI / 180.0;
+
+				var r = 6378137;
+
+				return (r * 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(rad1) * Math.cos(rad2) * Math.pow(Math.sin(
+					b / 2), 2)))).toFixed(0)
+
+			},
 			initMapContext() {
 				this.mapContext = uni.createMapContext("map", this);
 			},
@@ -76,26 +99,33 @@
 				}
 				this.controls = [control];
 			},
-			getCirclePosition() {
+			getCirclePosition(res) {
 				return {
-					latitude: this.latitude,
-					longitude: this.longitude,
+					latitude: currrentLoc.latitude,
+					longitude: currrentLoc.longitude,
 					color: '#F6931D',
 					fillColor: "#00000000",
 					radius: 80 * this.distance,
 					strokeWidth: 1
 				}
 			},
+			setCenterLoc(res){
+				currrentLoc.latitude = res.latitude;
+				currrentLoc.longitude = res.longitude;
+			},
+			updateCenter(res){
+				this.setCenterLoc(res);
+				this.circles = [this.getCirclePosition(res)];
+			},
 			onMapChange(e) {
 				if (e.type === 'end') {
 					let that = this;
 					this.mapContext.getCenterLocation({
 						success(res) {
-							that.latitude = res.latitude;
-							that.longitude = res.longitude;
-							that.circles = [that.getCirclePosition()];
+							that.updateCenter(res);
 						}
-					})
+					});
+					
 				}
 			}
 		}
@@ -106,7 +136,7 @@
 	.map-wrapper {
 		position: fixed;
 		bottom: 400rpx;
-		top: 0rpx;
+		top: 0;
 		left: 0;
 		right: 0;
 	}
