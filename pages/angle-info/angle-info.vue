@@ -53,6 +53,19 @@
 				</view>
 			</view>
 		</view>
+		
+		<view class="judge-wrapper">
+			<view style="margin-bottom: 20upx;">
+				<decorateTitle title="救助视频"></decorateTitle>
+			</view>
+			<scroll-view scroll-x="true" class="scroll-view_H" style="width: 100%" scroll-with-animation>
+				<view class="companys">
+					<videoItem></videoItem>
+					<videoItem></videoItem>
+				</view>
+			</scroll-view>
+		</view>
+		
 
 		<view class="history-wrapper">
 			<decorateTitle title="历史评价"></decorateTitle>
@@ -95,6 +108,7 @@
 <script>
 	import uniRate from "@/components/uni-rate/uni-rate.vue"
 	import decorateTitle from "@/components/decorate-title.vue"
+	import videoItem from "./videoItem.vue"
 	export default {
 		data() {
 			return {
@@ -110,7 +124,8 @@
 		},
 		components: {
 			uniRate,
-			decorateTitle
+			decorateTitle,
+			videoItem
 		}
 	}
 </script>
@@ -119,6 +134,14 @@
 	.main {
 		width: 100%;
 
+	}
+	
+	.companys {
+		display: flex;
+		flex-direction: row;
+		width: auto;
+		/* height: 400upx; */
+		overflow-x: scroll;
 	}
 
 	.history-item {
@@ -168,6 +191,10 @@
 		bottom: 0;
 		width: 170upx;
 		height: 177upx;
+	}
+	
+	.scroll-view_H{
+		/* margin-top: 20upx; */
 	}
 
 	.judge-wrapper {
