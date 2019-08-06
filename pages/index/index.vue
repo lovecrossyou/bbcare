@@ -29,6 +29,7 @@
 				</view>
 				<uni-collapse >
 					<uni-collapse-item title="设置" thumb="http://qnimage.xiteng.com/setting.png"> 
+                    
 						<view class="coll-items">
 							<view class="item" @click="makePhoneCall">
 								<image src="../../static/index/baojing.png" mode=""></image>
@@ -227,7 +228,7 @@
 		position: fixed;
 		bottom: 260rpx;
 		/* top: 260rpx; */
-		top:460upx;
+		top:260upx;
 		left: 0;
 		right: 0;
 	}

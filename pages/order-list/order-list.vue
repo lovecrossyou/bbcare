@@ -21,7 +21,6 @@
 			<div class="order-footer">
 				<div class="title">维修天使 </div>
 				<div class="name">李晓明</div>
-
 				<div class="footer-btn">
 					取消订单
 				</div>
