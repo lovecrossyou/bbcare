@@ -2,7 +2,7 @@
 	<view class="main">
 		<view class="content">
 			<view class="map-wrapper">
-				<map style="width: 100%; height: 100%;" :circles="circles" :latitude="latitude" :longitude="longitude" :controls="controls"
+				<map style="width: 750upx; height: 800upx" :circles="circles" :latitude="latitude" :longitude="longitude" :controls="controls"
 				 :markers="covers">
 				</map>
 			</view>
@@ -27,21 +27,16 @@
 						</view>
 					</view>
 				</view>
-				<uni-collapse >
-					<uni-collapse-item title="设置" thumb="http://qnimage.xiteng.com/setting.png"> 
-                    
-						<view class="coll-items">
-							<view class="item" @click="makePhoneCall">
-								<image src="../../static/index/baojing.png" mode=""></image>
-								<view class="coll-title">报警</view>
-							</view>
-							<view class="item" @click="goSettingMap">
-								<image src="../../static/index/range.png" mode=""></image>
-								<view class="coll-title">设定预警范围</view>
-							</view>
-						</view>
-					</uni-collapse-item>
-				</uni-collapse>
+				<view class="coll-items">
+					<view class="item" @click="makePhoneCall">
+						<image src="../../static/index/baojing.png" mode=""></image>
+						<view class="coll-title">报警</view>
+					</view>
+					<view class="item" @click="goSettingMap">
+						<image src="../../static/index/range.png" mode=""></image>
+						<view class="coll-title">设定预警范围</view>
+					</view>
+				</view>
 			</view>
 
 
@@ -62,8 +57,6 @@
 				</view>
 			</view>
 		</view>
-		<uni-fab :pattern="pattern" :content="content" :horizontal="horizontal" :vertical="vertical" :direction="direction"
-		 @trigger="trigger"></uni-fab>
 	</view>
 </template>
 
@@ -189,7 +182,7 @@
 	.expert {
 		position: fixed;
 		/* width: 690upx; */
-		bottom: 40upx;
+		bottom:60upx;
 		left: 30upx;
 		height: 126upx;
 		background-color: #FFFFFF;
@@ -225,10 +218,9 @@
 	}
 
 	.map-wrapper {
-		position: fixed;
-		bottom: 260rpx;
-		/* top: 260rpx; */
-		top:260upx;
+		position: fixed; 
+		bottom: 260upx;
+		top:360upx;
 		left: 0;
 		right: 0;
 	}
@@ -272,10 +264,8 @@
 
 	.panel-wrapper {
 		width: 100%;
-		/* height: 178upx; */
 		height: 218upx;
-		position: fixed;
-		top: 60upx;
+		margin-top: 60upx;
 	}
 
 	.panel {

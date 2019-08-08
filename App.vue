@@ -21,4 +21,8 @@
 	.uni-collapse-cell__title-text{
 		font-size: 20upx !important;
 	}
+	
+	uni-page-body{
+		height: 100%;
+	}
 </style>
