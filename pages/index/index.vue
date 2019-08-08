@@ -2,8 +2,8 @@
 	<view class="main">
 		<view class="content">
 			<view class="map-wrapper">
-				<map style="width: 750upx; height: 800upx" :circles="circles" :latitude="latitude" :longitude="longitude" :controls="controls"
-				 :markers="covers">
+				<map v-bind:style="{width: 750+'upx', height: mapHeight+'upx'}" :circles="circles" :latitude="latitude" :longitude="longitude"
+				 :controls="controls" :markers="covers">
 				</map>
 			</view>
 
@@ -116,7 +116,8 @@
 					color: '#fff',
 					fillColor: "#F6931D",
 					radius: 40
-				}]
+				}],
+				mapHeight:0
 			}
 		},
 		onLoad() {
@@ -124,8 +125,24 @@
 			this.latitude = p.latitude;
 			this.longitude = p.longitude;
 			this.circles = [p];
+			this.loadSystemInfo();
 		},
 		methods: {
+			loadSystemInfo() {
+				try {
+					const res = uni.getSystemInfoSync();
+					this.mapHeight = res.windowHeight ;
+					// console.log(res.model);
+					// console.log(res.pixelRatio);
+					// console.log(res.windowWidth);
+					// console.log(res.windowHeight);
+					// console.log(res.language);
+					// console.log(res.version);
+					// console.log(res.platform);
+				} catch (e) {
+					// error
+				}
+			},
 			makePhoneCall() {
 				uni.makePhoneCall({
 					phoneNumber: '110'
@@ -171,7 +188,7 @@
 				})
 			},
 
-			goBBList(){
+			goBBList() {
 				uni.navigateTo({
 					url: "/pages/bblist/bblist"
 				})
