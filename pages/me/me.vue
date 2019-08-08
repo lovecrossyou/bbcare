@@ -1,7 +1,6 @@
 <template>
 	<view class="main">
 		<view class="header">
-			<image @click="goVideo" class="video" src="../../static/video/video.png" mode=""></image>
 			<view class="user">
 				<image src="../../static/me/wo_touxiang@2x.png" class="user-icon"></image>
 				<view class="name">林慕白</view>
@@ -178,11 +177,7 @@
 			}
 		},
 		methods: {
-			goVideo(){
-				uni.navigateTo({
-					url:"/pages/video-monitor/video-monitor"
-				})
-			},
+			
 			addBB(){
 				uni.navigateTo({
 					url:"/pages/relativescard/relativescard"

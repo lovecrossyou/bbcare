@@ -1,142 +1,126 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-	{
-	    "path" : "pages/login/login",
-	    "style" : {
-			"navigationBarTitleText":"登录"
-		}
-	},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationStyle": "custom",
-				"navigationBarTitleText":"守护宝辈",
+				"navigationBarTitleText": "守护宝辈",
 				"app-plus": {
 					"titleNView": null
 				}
 			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "寻找天使",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent" //透明渐变导航栏
+					}
+				}
+			}
+		}, {
+			"path": "pages/me/me",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent" //透明渐变导航栏
+					}
+				}
+			}
+		}, {
+			"path": "pages/care/care",
+			"style": {
+				"navigationBarTitleText": "守护宝辈"
+			}
+		}, {
+			"path": "pages/angle-info/angle-info",
+			"style": {
+				"navigationBarTitleText": "李博天使"
+			}
+		}, {
+			"path": "pages/person-info/person-info",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "天使信息",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent" //透明渐变导航栏
+					}
+				}
+			}
+		}, {
+			"path": "pages/order-list/order-list",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		}, {
+			"path": "pages/angle-list/angle-list",
+			"style": {
+				"navigationBarTitleText": "救助天使"
+			}
+		}, {
+			"path": "pages/confirm-order/confirm-order",
+			"style": {
+				"navigationBarTitleText": "提交订单"
+			}
+		}, {
+			"path": "pages/fix-item/fix-item",
+			"style": {
+				"navigationBarTitleText": "选择维修项"
+			}
+		}, {
+			"path": "pages/fix-item-select/fix-item-select",
+			"style": {
+				"navigationBarTitleText": "选择维修项"
+			}
+		}, {
+			"path": "pages/pay-order-info/pay-order-info",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "下单",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent" //透明渐变导航栏
+					}
+				}
+			}
+		}, {
+			"path": "pages/login/forget",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		}, {
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "pages/relativescard/relativescard",
+			"style": {
+				"navigationBarTitleText": "亲属卡"
+			}
+		}, {
+			"path": "pages/mapSetting/mapSetting",
+			"style": {
+				"navigationBarTitleText": "设置活动范围"
+			}
+		}, {
+			"path": "pages/video-monitor/video-monitor",
+			"style": {
+				"navigationBarTitleText": "视频监控"
+			}
 		}
-	    ,{
-            "path" : "pages/search/search",
-            "style" : {
-				"navigationStyle": "custom",
-				"navigationBarTitleText":"寻找天使",
-				"app-plus": {
-					"titleNView": {
-						"type": "transparent" //透明渐变导航栏
-					}
-				}
-			}
-        }
-        ,{
-            "path" : "pages/me/me",
-            "style" : {
-				"navigationStyle": "custom",
-				"navigationBarTitleText":"我",
-				"app-plus": {
-					"titleNView": {
-						"type": "transparent" //透明渐变导航栏
-					}
-				}
-			}
-        }
-        ,{
-            "path" : "pages/care/care",
-            "style" : {
-				"navigationBarTitleText":"守护宝辈"
-			}
-        }
-        ,{
-            "path" : "pages/angle-info/angle-info",
-            "style" : {
-				"navigationBarTitleText":"李博天使"
-			}
-        }
-        ,{
-            "path" : "pages/person-info/person-info",
-            "style" : {
-				"navigationStyle": "custom",
-				"navigationBarTitleText":"天使信息",
-				"app-plus": {
-					"titleNView": {
-						"type": "transparent" //透明渐变导航栏
-					}
-				}
-			}
-        }
-        ,{
-            "path" : "pages/order-list/order-list",
-            "style" : {
-				"navigationBarTitleText":"我的订单"
-			}
-        }
-        ,{
-            "path" : "pages/angle-list/angle-list",
-            "style" : {
-				"navigationBarTitleText":"救助天使"
-			}
-        }
-        ,{
-            "path" : "pages/confirm-order/confirm-order",
-            "style" : {
-				"navigationBarTitleText":"提交订单"
-			}
-        }
-        ,{
-            "path" : "pages/fix-item/fix-item",
-            "style" : {
-				"navigationBarTitleText":"选择维修项"
-			}
-        }
-        ,{
-            "path" : "pages/fix-item-select/fix-item-select",
-            "style" : {
-				"navigationBarTitleText":"选择维修项"
-			}
-        }
-        ,{
-            "path" : "pages/pay-order-info/pay-order-info",
-            "style" : {
-				"navigationStyle": "custom",
-				"navigationBarTitleText":"下单",
-				"app-plus": {
-					"titleNView": {
-						"type": "transparent" //透明渐变导航栏
-					}
-				}
-			}
-        }
-        ,{
-            "path" : "pages/login/forget",
-            "style" : {
-				"navigationBarTitleText":"忘记密码"
-			}
-        }
-		,{
-		    "path" : "pages/login/register",
-		    "style" : {
-				"navigationBarTitleText":"注册"
-			}
-		}
-        ,{
-            "path" : "pages/relativescard/relativescard",
-            "style" : {
-				"navigationBarTitleText":"亲属卡"
-			}
-        }
-        ,{
-            "path" : "pages/mapSetting/mapSetting",
-            "style" : {
-				"navigationBarTitleText":"设置活动范围"
-			}
-        }
-        ,{
-            "path" : "pages/video-monitor/video-monitor",
-            "style" : {
-				"navigationBarTitleText":"视频监控"
-			}
-        }
-    ],
+	],
 	"tabBar": {
 		"color": "#999999",
 		"selectedColor": "#4784FF",
@@ -156,8 +140,8 @@
 			{
 				"pagePath": "pages/me/me",
 				"text": "我的",
-				"iconPath": "static/tab/tab_connections.png",
-				"selectedIconPath": "static/tab/tab_connections_s.png"
+				"iconPath": "static/tab/tab_me.png",
+				"selectedIconPath": "static/tab/tab_me_s.png"
 			}
 		]
 	},

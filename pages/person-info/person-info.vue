@@ -3,8 +3,11 @@
 		<view class="header">
 			<image src="../../static/person/shushu_top_bk@2x.png" class="headerbg" />
 			<image class="logo" src="../../static/me/wo_renwu@2x.png"></image>
-			<view class="name">
-				叔叔
+			<view class="name-video">
+				<view class="name">
+					叔叔
+				</view>
+				<image @click="goVideo" class="video" src="../../static/video/video.png" mode=""></image>
 			</view>
 			<view class="desc">
 				有点糖尿病不能吃甜食
@@ -132,7 +135,11 @@
 			}
 		},
 		methods: {
-
+			goVideo(){
+				uni.navigateTo({
+					url:"/pages/video-monitor/video-monitor"
+				});
+			},
 		},
 		components: {
 			decorateTitle
@@ -161,6 +168,23 @@
 		text-align: center;
 		color: #FFFFFF;
 		font-size: 36upx;
+	}
+	
+	.name-video{
+		/* display: flex;
+		flex-direction: row; */
+	}
+	.video{
+		position: absolute;
+		right: 60upx;
+		top: 186upx;
+		
+		font-size: 40upx;
+		color: #242A38;
+		font-weight: bold;
+		
+		width: 40upx;
+		height: 40upx;
 	}
 	
 	.btn-wrapper{
@@ -203,6 +227,7 @@
 		height: 26rpx;
 		margin-right: 12upx;
 	}
+
 
 	.headerbg {
 		width: 100%;

@@ -1,7 +1,6 @@
 <template>
 	<view class="item-box">
-		<!-- <image class="img" src="../../static/tianshijieshao_sihp.png" mode=""></image> -->
-		<video style="width: 750upx; height: 300upx;" id="top-img" src="https://wosmedia1.anjukestatic.com/UcSrQpOnMUW/brokermediatransform/43_1143097045523947521.405.mp4"
+		<video style="width: 690upx; height: 300upx;" id="top-img" src="https://wosmedia1.anjukestatic.com/UcSrQpOnMUW/brokermediatransform/43_1143097045523947521.405.mp4"
 		 controls></video>
 		<image class="btn-play" src="../../static/ttianshijieshao_bofang.png" mode=""></image>
 	</view>
