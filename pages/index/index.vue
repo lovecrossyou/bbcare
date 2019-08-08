@@ -19,7 +19,7 @@
 						</view>
 					</block>
 
-					<view class="footer_item_last" @click="goHistory">
+					<view class="footer_item_last" @click="goBBList">
 						<image src="/static/index/home_icon_add.png" class="footer_item_icon_circle_last">
 						</image>
 						<view class="footer_item_title">
@@ -56,6 +56,8 @@
 					</view>
 				</view>
 			</view>
+
+			<uni-popup ref="popup" type="bottom">底部弹出 Popup</uni-popup>
 		</view>
 	</view>
 </template>
@@ -168,6 +170,12 @@
 					url: "/pages/person-info/person-info"
 				})
 			},
+
+			goBBList(){
+				uni.navigateTo({
+					url: "/pages/bblist/bblist"
+				})
+			}
 		},
 		components: {
 			uniRate,
@@ -182,7 +190,7 @@
 	.expert {
 		position: fixed;
 		/* width: 690upx; */
-		bottom:60upx;
+		bottom: 60upx;
 		left: 30upx;
 		height: 126upx;
 		background-color: #FFFFFF;
@@ -218,9 +226,9 @@
 	}
 
 	.map-wrapper {
-		position: fixed; 
+		position: fixed;
 		bottom: 260upx;
-		top:360upx;
+		top: 360upx;
 		left: 0;
 		right: 0;
 	}

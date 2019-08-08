@@ -120,7 +120,13 @@
 				"navigationBarTitleText": "视频监控"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/bblist/bblist",
+            "style" : {
+				"navigationBarTitleText":"宝辈"
+			}
+        }
+    ],
 	"tabBar": {
 		"color": "#999999",
 		"selectedColor": "#4784FF",
