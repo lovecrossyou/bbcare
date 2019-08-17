@@ -81,103 +81,45 @@
 			</view>
 
 
-			<view class="baobei-list">
-				<view class="baobei-item" @click="goPersonInfo">
-
-					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-					<image class="baobei-icon" src="../../static/me/wo_renwu@2x.png" mode=""></image>
-					<view class="baobei-info">
-						<view class="baobei-user">
-							<view class="baobei-name">
-								爷爷
+			<view class="baobei-list" >
+				<block v-for="(member,index) in list" :key="index">
+					<view class="baobei-item" @click="goPersonInfo">
+						<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
+						<image class="baobei-icon" :src="member.icon" mode=""></image>
+						<view class="baobei-info">
+							<view class="baobei-user">
+								<view class="baobei-name">
+									{{member.role}}
+								</view>
+								<view class="baobei-desc">
+									{{member.desc}}
+								</view>
 							</view>
-							<view class="baobei-desc">
-								最近血压有点高，要吃药
+							<view class="addr-wrapper">
+								<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
+								<view class="addr">{{member.addr}}</view>
 							</view>
+					
 						</view>
-						<view class="addr-wrapper">
-							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-							<view class="addr">北京市西城区百万庄大街11号</view>
-						</view>
-
 					</view>
-				</view>
-
-				<view class="baobei-item" @click="goPersonInfo">
-
-					<image src="" class="edit"></image>
-					<image class="baobei-icon" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565682106&di=4e6611ce3c761fb7e32beb455424d567&imgtype=jpg&er=1&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070170357-000000000719558061_5_800x800.jpg" mode=""></image>
-					<view class="baobei-info">
-						<view class="baobei-user">
-							<view class="baobei-name">
-								爸爸
-							</view>
-							<view class="baobei-desc">
-								最近血压有点高，要吃药
-							</view>
-						</view>
-						<view class="addr-wrapper">
-							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-							<view class="addr">北京市西城区百万庄大街11号</view>
-						</view>
-
-					</view>
-				</view>
-
-				<view class="baobei-item" @click="goPersonInfo">
-					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-					<image class="baobei-icon" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565087118087&di=f8c2ce9e0c1f75d4daeb24db7bd0f955&imgtype=0&src=http%3A%2F%2Fimg10.360buyimg.com%2Fn1%2Fs350x449_jfs%2Ft17077%2F146%2F246526855%2F208296%2Fed113eab%2F5a664023N3f315571.jpg%2521cc_350x449.jpg" mode=""></image>
-					<view class="baobei-info">
-						<view class="baobei-user">
-							<view class="baobei-name">
-								奶奶
-							</view>
-							<view class="baobei-desc">
-								最近血压有点高，要吃药
-							</view>
-						</view>
-						<view class="addr-wrapper">
-							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-							<view class="addr">北京市西城区百万庄大街11号</view>
-						</view>
-
-					</view>
-				</view>
-
-				<view class="baobei-item" @click="goPersonInfo">
-					<image src="../../static/me/wo_icon_5@2x.png" class="edit"></image>
-					<image class="baobei-icon" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565087239423&di=1b250166dbbb3760b56ba08306144559&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fent%2Fv%2F2013-08-19%2FU10013P28T3D3990750F326DT20130819143737.jpg" mode=""></image>
-					<view class="baobei-info">
-						<view class="baobei-user">
-							<view class="baobei-name">
-								妈妈
-							</view>
-							<view class="baobei-desc">
-								最近血压有点高，要吃药
-							</view>
-						</view>
-						<view class="addr-wrapper">
-							<image src="../../static/me/wo_icon_6@2x.png" class="addr-icon"></image>
-							<view class="addr">北京市西城区百万庄大街11号</view>
-						</view>
-
-					</view>
-				</view>
-				
+				</block>
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	import {mapState} from "vuex";
 	export default {
 		data() {
 			return {
 
 			}
 		},
+		computed:{
+			...mapState('members',['list'])
+		},
 		methods: {
-			
 			addBB(){
 				uni.navigateTo({
 					url:"/pages/relativescard/relativescard"
