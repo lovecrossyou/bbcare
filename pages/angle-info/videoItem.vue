@@ -1,8 +1,8 @@
 <template>
 	<view class="item-box">
-		<video style="width: 690upx; height: 300upx;" id="top-img" src="https://wosmedia1.anjukestatic.com/UcSrQpOnMUW/brokermediatransform/43_1143097045523947521.405.mp4"
+		<video style="width: 690upx; height: 300upx;" id="top-img" src="http://qnimage.xiteng.com/QQ20190818-102439-HD.mp4"
 		 controls></video>
-		<image class="btn-play" src="../../static/ttianshijieshao_bofang.png" mode=""></image>
+		<!-- <image class="btn-play" src="../../static/ttianshijieshao_bofang.png" mode=""></image> -->
 	</view>
 </template>
 
