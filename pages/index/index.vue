@@ -9,15 +9,22 @@
 
 			<view class="panel-wrapper">
 				<view class="panel">
-					<block v-for="(d,index) in positions" :key="index">
-						<view class="footer_item" @click="goPosition(d,index)">
-							<image :src="d.img" v-bind:class="selectIndex===index? 'footer_item_icon_circle_active' :'footer_item_icon_circle'">
-							</image>
-							<view class="footer_item_title">
-								{{d.title}}
+					<scroll-view scroll-x="true">
+						<view class="scroll-view_H">
+							<block v-for="(d,index) in care_list" :key="index">
+								<view class="footer_item" @click="goPosition(d,index)">
+									<image mode="aspectFit" :src="d.icon" v-bind:class="selectIndex===index? 'footer_item_icon_circle_active' :'footer_item_icon_circle'">
+									</image>
+									<view class="footer_item_title">
+										{{d.role}}
+									</view>
+								</view>
+							</block>
+							<view v-if="care_list.length===0" class="add-tips">
+								点击添加守护宝辈
 							</view>
 						</view>
-					</block>
+					</scroll-view>
 
 					<view class="footer_item_last" @click="goBBList">
 						<image src="/static/index/home_icon_add.png" class="footer_item_icon_circle_last">
@@ -67,7 +74,9 @@
 	import uniPopup from "@/components/uni-popup/uni-popup.vue"
 	import uniCollapseItem from '@/components/uni-collapse-item/uni-collapse-item.vue';
 	import uniCollapse from '@/components/uni-collapse/uni-collapse.vue';
-
+	import {
+		mapState
+	} from "vuex"
 	export default {
 		data() {
 			return {
@@ -101,6 +110,22 @@
 					fillColor: "#F6931D",
 					radius: 40
 				}, {
+					img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562844508509&di=cd6010ad4a43b221fc95f1b7c36686d7&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fff9ef93d75d4cfddf085ab67957e623230d5ce8666f3e-BrCfhJ_fw658',
+					title: '爸爸',
+					latitude: 39.90,
+					longitude: 116.38,
+					color: 'fff',
+					fillColor: "F6931D",
+					radius: 40
+				}, {
+					img: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=473036217,3304635291&fm=26&gp=0.jpg',
+					title: '妈妈',
+					latitude: 38.90,
+					longitude: 116.388,
+					color: '#fff',
+					fillColor: "#F6931D",
+					radius: 40
+				}, {
 					img: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4088898956,2562357905&fm=26&gp=0.jpg",
 					title: '爷爷',
 					latitude: 39.90,
@@ -117,8 +142,11 @@
 					fillColor: "#F6931D",
 					radius: 40
 				}],
-				mapHeight:0
+				mapHeight: 0
 			}
+		},
+		computed: {
+			...mapState('members', ['list', 'care_list'])
 		},
 		onLoad() {
 			const p = this.positions[this.selectIndex];
@@ -131,7 +159,7 @@
 			loadSystemInfo() {
 				try {
 					const res = uni.getSystemInfoSync();
-					this.mapHeight = res.windowHeight ;
+					this.mapHeight = res.windowHeight;
 				} catch (e) {
 					// error
 				}
@@ -280,6 +308,12 @@
 		margin-left: 160upx;
 	}
 
+	.scroll-view_H {
+		display: flex;
+		flex-direction: row;
+		width: 600upx;
+	}
+
 	.panel-wrapper {
 		width: 100%;
 		height: 218upx;
@@ -333,6 +367,11 @@
 		border-radius: 50%;
 		border: solid 4upx #F6931D;
 	}
+	
+	.add-tips{
+		font-weight: bold;
+		color: #E1E1E1;
+	}
 
 	.footer_item_icon_circle_last {
 		width: 44upx;
@@ -352,11 +391,12 @@
 	}
 
 	.footer_item {
-		flex: 1;
+		width: 200upx;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		margin-right: 20upx;
 	}
 
 	.footer_item_icon {
