@@ -1,6 +1,8 @@
 <template>
 	<view class="swiper-item-angle" @click="goAngleInfo">
 		<image :src="icon" mode="aspectFit" class="swiper-item-icon"></image>
+		<image class="video" src="../../../static/video/video.png" mode=""></image>
+		
 		<view class="desc">
 			心肺功能专家
 		</view>
@@ -50,11 +52,22 @@
 		display: flex;
 		flex-direction: column;
 		margin-right: 20upx;
+		
+		
+		position: relative;
 	}
 
 	.swiper-item-icon {
 		width: 388upx;
 		height: 280upx;
+	}
+	
+	.video{
+		position: absolute;
+		right: 10upx;
+		top: 10upx;
+		width: 40upx;
+		height: 40upx;
 	}
 
 	.desc {
